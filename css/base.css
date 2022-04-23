@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 18px;
+
+}
+
+header, main, footer {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header {
+    margin: 2rem auto;
+    /* border: 1px solid #bbb; */
+    border-radius: 15px;
+    padding: .5rem;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    background-color: #006400;
+    box-shadow: 2px 2px 20px #000000;
+    height: 250px;
+}
+
+h1 {
+    margin: 0 auto;
+    color: white;
+    text-shadow: 2px 2px 20px #000000;
+}
+
+h2 {
+    text-shadow: 2px 2px 5px #000000;
+    border-bottom: 1px solid dimgray;
+    height: 45px;
+}
+
+picture {
+    width: 150px;
+    height: 200px;
+    margin-left: 20px;
+    box-shadow: 2px 2px 20px #000000;
+}
+
+ul {
+    margin: 15px 0 20px 40px;
+}
+
+li {
+    margin-top: 5px;
+}
+
+main p {
+    border-top: 1px solid dimgray;
+    color:dimgray;
+}
+
+footer {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    background-color: #006400;
+    border-radius: 15px;
+    height: 80px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    box-shadow: 2px 2px 20px #000000;
+}
+
+#footerText1 {
+    justify-self: center;
+    align-self: end;
+    color: white;
+    padding: 2px;
+}
+
+#footerText2 {
+    font-size: 15px;
+    justify-self: center;
+    padding: 2px;
+    color:#DAA520;
+}
