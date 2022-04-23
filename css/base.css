@@ -9,15 +9,13 @@
 body {
     font-family: 'Inconsolata', sans-serif;
     font-size: 18px;
-    max-width: 600px;
-    max-height: 1200px;
-    margin: 0 auto;
 
 }
 
-/* header, main, footer {
-  
-} */
+header, main, footer {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 header {
     margin: 2rem auto;
@@ -47,7 +45,7 @@ h2 {
 picture {
     width: 150px;
     height: 200px;
-    margin-left: 20px;
+    margin-left: 35px;
     box-shadow: 2px 2px 20px #000000;
 }
 
