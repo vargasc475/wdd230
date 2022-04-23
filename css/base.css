@@ -19,7 +19,6 @@ header, main, footer {
 
 header {
     margin: 2rem auto;
-    /* border: 1px solid #bbb; */
     border-radius: 15px;
     padding: .5rem;
     display: grid;
