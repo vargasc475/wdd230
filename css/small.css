@@ -8,8 +8,8 @@
 
 body {
     font-family: 'Inconsolata', sans-serif;
-    font-size: 18px;
-
+    font-size: 16px;
+    padding: 20px;
 }
 
 header, main, footer {
@@ -20,13 +20,14 @@ header, main, footer {
 header {
     margin: 2rem auto;
     border-radius: 15px;
-    padding: .5rem;
+    padding: 15px;
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
     align-items: center;
     background-color: #006400;
     box-shadow: 2px 2px 20px #000000;
-    height: 250px;
+    height: 300px;
 }
 
 h1 {
@@ -44,7 +45,6 @@ h2 {
 picture {
     width: 150px;
     height: 200px;
-    margin-left: 35px;
     box-shadow: 2px 2px 20px #000000;
 }
 
