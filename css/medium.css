@@ -15,5 +15,11 @@
    picture {
        margin-left: 35px;
        margin-top: 15px;
+       height: 200px;
+   }
+
+   img {
+    width: 150px;
+    height: 200px;
    }
 }
