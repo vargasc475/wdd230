@@ -10,8 +10,7 @@ header {
     color: white;
     grid-row: 1/1;
     padding-top: 10px;
-    text-align: center;
-    text-justify: center;
+    text-align: center; 
     height: 170px;
 }
 
@@ -23,7 +22,7 @@ section {
     background-color:gainsboro;
     grid-column: 1/2;
     display: grid;
-    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: auto;
     font-size: 18px;
 }
 
