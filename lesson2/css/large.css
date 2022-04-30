@@ -1,0 +1,38 @@
+@media (min-width: 70em) {
+    body {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px 1fr;
+        font-size: 20px;
+    }
+
+    header {
+        grid-column: 1/4;
+    }
+
+    section {
+        width: 380px;
+        height: auto;
+    }
+
+    #section1 {
+        grid-column: 1/2;
+    }
+    
+    #section2 {
+        grid-column: 2/3;
+    }
+    
+    #section3 {
+        grid-column: 3/4;
+        width: 380px;
+    }
+
+    #img3 {
+        width: 360px;
+        height: auto;
+    }
+
+    footer {
+        grid-column: 1/4;
+    }
+}

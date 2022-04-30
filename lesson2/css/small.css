@@ -1,0 +1,74 @@
+body {
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color:darkslategrey;
+    color: white;
+    grid-row: 1/1;
+    padding-top: 10px;
+    text-align: center;
+    text-justify: center;
+    height: 170px;
+}
+
+section {
+    width: 380px;
+    margin: 10px 0 15px;
+    justify-self: center;
+    border-radius: 10px 10px 0 0;
+    background-color:gainsboro;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
+    font-size: 18px;
+}
+
+section h3 {
+    background-color: darkslategrey;
+    color: white;
+    margin: 0;
+    height: 28px;
+    padding: 7px;
+    border-radius: 10px 10px 0 0;
+}
+
+section h4 {
+    margin: 15px 10px 10px 10px;
+
+}
+
+#section2 p {
+    margin-bottom: 33px;
+}
+
+#section3 p {
+    margin-bottom: 3px;
+}
+
+img {
+    width: 360px;
+    height: auto;
+    justify-self: center;
+    margin-top: 5px;
+}
+
+#img2 {
+    height: 564px;
+}
+
+section p {
+    margin-left: 13px;
+    margin-right: 13px;
+    line-height: 1.5;
+}
+
+footer {
+    grid-column: 1/2;
+    text-align: center;
+    background-color: darkslategray;
+    color: white;
+}
