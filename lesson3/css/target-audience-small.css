@@ -3,14 +3,14 @@ html {
 }
 
 h1, h2, h3 {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 
 main h2 {
     color: #004346;
 }
 p, nav, ul {
-    font-family: 'Work Sans';
+    font-family: 'Work Sans', sans-serif;
 }
 
 
