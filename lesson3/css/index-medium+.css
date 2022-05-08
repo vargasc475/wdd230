@@ -1,0 +1,13 @@
+@media (min-width: 37.5em) {
+    nav {
+        flex-direction: row;
+    }
+
+    main {
+        text-align: left;
+    }
+
+    img {
+        width: 459px;
+    }
+}

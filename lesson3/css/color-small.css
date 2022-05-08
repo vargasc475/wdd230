@@ -1,0 +1,106 @@
+html {
+    background-color: #09BC8A;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat';
+}
+
+p, nav {
+    font-family: 'Work Sans';
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #FFF;
+    padding: 1em;
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+    color: #BB9F06;
+    background-color: #172A3A;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #09BC8A;
+}
+
+nav div {
+    flex: 1 1 auto;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #004346;
+}
+
+h3 {
+    color: #004346;
+}
+
+.section {
+    text-align: center;
+}
+
+.color-palette {
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    padding: 3em;
+}
+
+.primary, .secondary, .accent1, .accent2, .accent3 {
+    justify-self: center;
+    border: 1px solid black ;
+    margin: 0 0 20px 0;
+    width: 111px;
+    
+}
+.primary, .accent1, .accent2, .accent3 {
+    color: white;
+}
+
+.primaryH, .secondaryH, .accent1H, .accent2H, .accent3H {
+    justify-self: center;
+    border: 1px solid black;
+    padding: 1.5em;
+    margin: 0;
+    width: 103px;
+}
+
+.primary {
+    background-color: #09BC8A;
+    padding: 1.5em;
+}
+
+.secondary {
+    background-color: #FFF;
+    padding: 1.5em;
+}
+
+.accent1 {
+    background-color: #004346;
+    padding: 1.5em;
+}
+
+.accent2 {
+    background-color: #BB9F06;
+    padding: 1.5em;
+}
+
+.accent3 {
+    background-color: #172A3A;
+    padding: 1.5em;
+}

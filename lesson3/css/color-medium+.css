@@ -1,0 +1,18 @@
+@media (min-width: 55em) {
+    nav {
+        flex-direction: row;
+    }
+
+    .section {
+        text-align: left;
+    }
+
+    .color-palette {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .primary, .secondary, .accent1, .accent2, .accent3 {
+        grid-row: 2/3;
+    }
+}

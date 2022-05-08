@@ -1,0 +1,9 @@
+@media (min-width: 37.5em) {
+    nav {
+        flex-direction: row;
+    }
+
+    section {
+        font-size: 16px;
+    }
+}
