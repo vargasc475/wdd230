@@ -38,13 +38,13 @@ header {
 }
 
 
-.header-logo img {
+.header-logo {
     width: 50px;
     background-color: #FFF;
     border-radius: 30px;
 }
 
-.header-logo {
+.header-logo img {
     padding-left: 10px;
 }
 
@@ -209,7 +209,7 @@ footer {
     padding-bottom: 10px;
 }
 
-.footer-logo img {
+.footer-logo {
     width: 130px;
     margin-top: 20px;
     background-color: #FFF;

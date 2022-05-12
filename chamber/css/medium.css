@@ -107,8 +107,10 @@
 
     .footer-logo {
         justify-self: end;
-        padding-right: 15px;
+        margin-left: 50px;
+       
     }
+
 
     .direction p {
         text-align: left;
