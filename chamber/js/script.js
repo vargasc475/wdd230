@@ -1,7 +1,6 @@
 // GET ELEMENTS
 const headerDate = document.querySelector('.header-date');
 const copy = document.querySelector('.copy');
-const studentName = document.querySelector('.name');
 const project = document.querySelector('.project');
 const last = document.querySelector('.last-updated');
 const subfooter = document.querySelector('.subfooter');
@@ -23,7 +22,6 @@ let lastUpdated = document.lastModified;
 headerDate.innerHTML = `${day}, ${numberDay} ${month} ${year}`;
 
 copy.innerHTML = `&copy ${year} The Garden Chamber`;
-studentName.innerHTML = `<strong>Christian Vargas</strong>`;
 project.innerHTML = `WDD 230 Project`;
 last.innerHTML = `Last Modified: ${lastUpdated}`;
 subfooter.innerHTML = `&copy ${year} The Garde Chamber | <strong>Christian Vargas</strong> | WDD 230 Project | Last Modified: ${lastUpdated}`;
