@@ -1,0 +1,251 @@
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p, nav, div, article {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+}
+/* STYLING HEADER */
+header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 70px 50px 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: #172A3A;
+    color: #BB9F06;
+}
+
+.header-title {
+    font-size: 10px;
+    width: 160px;
+    padding: 5px;
+}
+
+.header-title h1 {
+    margin: 0;
+}
+
+.header-title h3 {
+    margin: 0;
+}
+
+
+.header-logo img {
+    width: 50px;
+    background-color: #FFF;
+    border-radius: 30px;
+}
+
+.header-logo {
+    padding-left: 10px;
+}
+
+
+.social {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding-left: 10px;
+}
+
+.social img {
+    width: 20px;
+}
+
+button {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    padding: 0;
+    width: 70%;
+    height: 40%;
+    background-color: #004346;
+    color: white;
+}
+
+#hamburguerBtn span:nth-child(1) {display: block;}
+#hamburguerBtn span:nth-child(2) {display: none;}
+
+#hamburguerBtn.open span:nth-child(1) {display: none;}
+#hamburguerBtn.open span:nth-child(2) {display: block;}
+
+.header-date {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    margin: 0 0 15px 0;
+    padding-top: 5px;
+    width: 88%;
+    height: 25px;
+    text-align: center;
+    background-color:rgba(88, 86, 86, 0.8);
+}
+
+nav {
+    grid-column: 1/5;
+    display: flex;
+    background-color: #09bc89;
+    width: 100%;
+}
+
+nav ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav ul li {
+    list-style: none;
+    text-align: center;
+    padding-top: 6px;
+    flex: 1 1 auto;
+    height: 25px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+nav ul li:hover {
+    background-color: #004346;
+    flex: 1 1 auto;
+}
+/* STYLING MAIN */
+
+main {
+    display: grid;
+    grid-template-rows: repeat(5, 150px);
+}
+
+.placeholder-box-hero {
+    background-color: rgb(204, 204, 204);
+    border: 1px solid grey;
+    margin: 20px 7px 7px 7px ;
+    padding: 20px;
+
+}
+
+.placeholder-box-news {
+    background-color: rgb(204, 204, 204);
+    border: 1px solid grey;
+    margin: 7px;
+    padding: 20px;
+}
+
+.placeholder-box-event {
+    background-color: rgb(204, 204, 204);
+    border: 1px solid grey;
+    margin: 7px;
+    padding: 20px;
+}
+
+.placeholder-box-weather {
+    background-color: rgb(204, 204, 204);
+    border: 1px solid grey;
+    margin: 7px;
+    padding: 20px;
+}
+
+.placeholder-box-join {
+    background-color: rgb(204, 204, 204);
+    border: 1px solid grey;
+    margin: 7px;
+    padding: 20px;
+}
+
+.placeholder-box-spotlight {
+    background-color: rgb(204, 204, 204);
+    border: 1px solid grey;
+    margin: 7px 7px 15px 7px;
+    height: 300px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.placeholder-box-spot1, .placeholder-box-spot2 {
+    background-color: rgb(204, 204, 204);
+    border: 1px solid grey;
+    height: 90%;
+    width: 90%;
+}
+
+.placeholder-box-spot1 {
+    align-self: end;
+    justify-self: center;
+}
+
+.placeholder-box-spot2 {
+    justify-self: center;
+}
+
+.placeholder-box-spot3 {
+    display: none;
+
+}
+/* STYLING THE FOOTER */
+
+.medium {display: none;}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #172A3A;
+    color: #BB9F06;
+    padding-bottom: 10px;
+}
+
+.footer-logo img {
+    width: 130px;
+    margin-top: 20px;
+    background-color: #FFF;
+    border-radius: 65px;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer h2 {
+    margin-bottom: 0;
+
+}
+
+#street-p {
+    margin: 0;
+}
+
+#city-p {
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.copy {
+    width: 98%;
+    padding-top: 10px;
+    border-top: 1px solid black;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.name, .project, .last-updated {
+    margin: 5px;
+    text-align: center;
+}

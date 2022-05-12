@@ -1,0 +1,138 @@
+@media (min-width: 45em) {
+    button {
+        width: 20%;
+        height: 40%;
+    }
+
+    header {
+        grid-template-columns: 100px 1fr 1fr 1fr;
+        grid-template-rows: 100px 50px 1fr;
+    }
+
+    .header-logo img {
+        width: 60px;
+        align-self: end;
+    }
+
+    .header-logo {
+        justify-self: end;
+    }
+
+    .header-title {
+        justify-self: start;
+        padding: 15px;
+    }
+
+    .social {
+        justify-self: end;
+    }
+
+    .social img {
+        width: 30px;
+        padding: 5px;
+    }
+
+    /* STYLING MAIN */
+
+    main {
+        display: grid;
+        grid-template-rows: repeat(5, 190px);
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .placeholder-box-hero {
+        grid-template-rows: 1/2;
+        grid-column: 1/3;
+    }
+
+    
+    .placeholder-box-news {
+        grid-template-rows: 2/3;
+        grid-column: 1/3;
+    }
+
+    .placeholder-box-spotlight {
+        height: 180px;
+        grid-row: 3/4;
+        grid-column: 1/3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0;
+    }
+
+    .placeholder-box-spot1, .placeholder-box-spot2 {
+        height: 90%;
+        width: 90%;
+        margin: 5px;
+    }
+
+    .placeholder-box-spot1 {
+        align-self: center;
+        justify-self: end;
+        grid-row: 1/3;
+    }
+    
+    .placeholder-box-spot2 {
+        align-self: center;
+        justify-self: start;
+        grid-row: 1/3;
+    }
+
+    .placeholder-box-join {
+        grid-row: 4/5;
+        grid-column: 1/3;
+    }
+
+    .placeholder-box-event {
+        grid-row: 5/6;
+        grid-column: 1/2;
+        width: 400px;
+    }
+
+    
+    .placeholder-box-weather {
+        grid-row: 5/6;
+        grid-column: 2/3;
+    }
+
+    /* STYLING FOOTER */
+
+    .small {display: none;}
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 350px 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .footer-logo {
+        justify-self: end;
+        padding-right: 15px;
+    }
+
+    .info {
+        align-self: center;
+        padding-top: 25px;
+    }
+
+    .info p {
+        margin: 5px;
+    }
+
+    .medium {
+        display: block;
+        grid-column: 1/4;
+        justify-self: center;
+        border-top: 0.2px solid black;
+        width: 95%;
+    }
+
+    .medium p {
+        width: 65%;
+        text-align: center;
+        margin-left: 130px;
+    }
+
+
+
+}
