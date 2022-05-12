@@ -15,7 +15,7 @@ header {
 }
 
 section {
-    width: 380px;
+    width: 90%;
     margin: 10px 0 15px;
     justify-self: center;
     border-radius: 10px 10px 0 0;
@@ -23,7 +23,6 @@ section {
     grid-column: 1/2;
     display: grid;
     grid-template-rows: auto;
-    font-size: 18px;
 }
 
 section h3 {
@@ -44,12 +43,16 @@ section h4 {
     margin-bottom: 33px;
 }
 
+#section2 h3 {
+    font-size: 16px;
+}
+
 #section3 p {
     margin-bottom: 3px;
 }
 
 img {
-    width: 360px;
+    width: 280px;
     height: auto;
     justify-self: center;
     margin-top: 5px;
