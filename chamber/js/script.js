@@ -24,7 +24,7 @@ headerDate.innerHTML = `${day}, ${numberDay} ${month} ${year}`;
 copy.innerHTML = `&copy ${year} The Garden Chamber`;
 project.innerHTML = `WDD 230 Project`;
 last.innerHTML = `Last Modified: ${lastUpdated}`;
-subfooter.innerHTML = `&copy ${year} The Garde Chamber | <strong>Christian Vargas</strong> | WDD 230 Project | Last Modified: ${lastUpdated}`;
+subfooter.innerHTML = `&copy ${year} The Garden Chamber | <strong>Christian Vargas</strong> | WDD 230 Project | Last Modified: ${lastUpdated}`;
 
 function toggleMenu() {
     nav.classList.toggle('open');
