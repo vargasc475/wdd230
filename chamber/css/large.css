@@ -2,7 +2,6 @@
     body {
         max-width: 1300px;
         padding: 0;
-        font-size: 16px;
     }
 
     .header-logo {
@@ -16,6 +15,7 @@
 
     .header-date {
         width: 95%;
+        font-size: 17px;
     }
 
     nav {
@@ -23,6 +23,7 @@
         grid-row: 1/2;
         background-color: #09bc8960;
         border-radius: 10px;
+        font-size: 16px;
     }
 
     nav ul li:hover {
@@ -51,6 +52,10 @@
         display: grid;
         grid-template-columns: 1fr 700px 1fr;
         grid-template-rows: 200px 200px 200px;
+    }
+
+    main div, main article {
+        font-size: 16px;
     }
 
     .placeholder-box-event {
@@ -95,10 +100,6 @@
         margin: 0 5px 5px 5px ;
     }
 
-    /* .placeholder-box-spot1, .placeholder-box-spot2, .placeholder-box-spot3 {
-        width: 100%;
-    }  */
-
     .placeholder-box-weather {
         grid-column: 1/2;
         grid-row: 2/3;
@@ -125,7 +126,7 @@
     footer {
         display: grid;
         grid-template-columns: 1fr 600px 400px;
-        grid-template-rows: 200px 1fr;
+        grid-template-rows: 150px 25px;
     }
 
     footer p{
@@ -133,7 +134,7 @@
     }
 
     .footer-logo {
-        width: 150px;
+        width: 120px;
         margin: 20px;
     }
 
@@ -146,15 +147,22 @@
     
     .direction p {
         text-align: left;
+        font-size: 15px;
     }
 
-    .info {
-        justify-self: start;
+    .direction h2 {
+        font-size: 22px;
+    }
+
+    .info p {
+        text-align: start;
+        font-size: 15px;
         
     }
 
     .medium p {
         margin-left: 180px;
         width: 900px;
+        font-size: 16px;
     }
 }
