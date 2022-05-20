@@ -14,7 +14,7 @@ const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", 
 const date = new Date();
 let day = days[date.getDay()];
 let month = months[date.getMonth()];
-let numberDay = date.getDay();
+let numberDay = date.getDate();
 let year = date.getFullYear();
 let lastUpdated = document.lastModified;
 
@@ -32,3 +32,21 @@ function toggleMenu() {
 }
 
 hamButton.onclick = toggleMenu;
+
+
+// GET BANNER ELEMENT
+const banner = document.getElementById("banner");
+
+// GET CURRENT DAY
+let currentDay = new Date().getDay();
+
+if (currentDay === 1 || currentDay === 2) {
+    banner.style.display = "block";
+    banner.style.display = "grid";
+} 
+
+const close = document.getElementById("close");
+
+close.addEventListener('click', () => {
+    banner.style.display = "none";
+})

@@ -4,10 +4,17 @@
         height: 40%;
     }
 
+
+    /* STYLING BANNER */
+    #banner {
+        display: none;
+    }
+    /* STYLING HEADER */
     header {
         display: grid;
         grid-template-columns: 150px 1fr 1fr 1fr;
         grid-template-rows: 100px 50px 1fr;
+        height: 150px;
     }
 
     .header-logo {
@@ -27,6 +34,7 @@
 
     nav {
         font-size: 16px;
+        position: relative;
     }
 
     .social {
@@ -42,38 +50,60 @@
 
     main {
         display: grid;
-        grid-template-rows: repeat(5, 190px);
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 453px 250px 350px 250px 300px;
+        grid-template-columns: 480px 1fr;
     }
 
-    main div, main, section {
+    /* main div, main, section {
         font-size: 16px;
-    }
+    } */
+
+    /* styling hero box */
 
     .placeholder-box-hero {
         grid-row: 1/2;
         grid-column: 1/3;
+    } 
+
+    .welcome {
+        bottom: 350px;
+        left: 50px;
+        width: 450px;
+        font-size: 30px;
     }
 
-    
+    .button {
+        bottom: 200px;
+        left: 450px;
+        font-size: 26px;
+        width: 250px;
+        text-align: center;
+        box-shadow: 0 0 30px black;
+    }
+
+    /* styling news box */
+
     .placeholder-box-news {
         grid-row: 2/3;
         grid-column: 1/3;
+        margin: 20px 0;
+        padding: 20px 40px;
     }
 
+    /* styling spotlight */
+
     .placeholder-box-spotlight {
-        height: 180px;
         grid-row: 3/4;
         grid-column: 1/3;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0;
+        margin: 0;
     }
 
     .placeholder-box-spot1, .placeholder-box-spot2 {
         height: 90%;
         width: 90%;
-        margin: 5px;
     }
 
     .placeholder-box-spot1 {
@@ -88,21 +118,71 @@
         grid-row: 1/3;
     }
 
+    /* styling join box */
+
     .placeholder-box-join {
+        display: block;
         grid-row: 4/5;
         grid-column: 1/3;
+        text-align: center;
+        background-color: #004346;
+        margin: 20px 0;
+        padding: 20px;
     }
+
+    #join-button {
+        background-color: #09bc89;
+        margin: 15px 30px;
+        border-radius: 5px;
+        font-size: 30px;
+        padding: 15px;
+        box-shadow: 0 0 30px black;
+    }
+
+    #join-p {
+        font-size: 16px;
+        margin-top: 40px;
+        color: #fff;
+    }
+
+    /* styling event box */
 
     .placeholder-box-event {
         grid-row: 5/6;
         grid-column: 1/2;
-        width: 400px;
+        grid-template-rows: 1fr 80px 1fr 50px;
+        border-radius: 0 5px 5px 0;
+        margin-top: 6px;
+        margin-bottom: 15px;
     }
 
-    
+    #event-h2 {
+        font-size: 24px;
+    }
+
+    #event-h3 {
+        font-size: 16px;
+        align-self: center;
+    }
+
+    #event-p {
+        margin: 0 25px;
+    }
+
+    #event-moreinfo {
+        font-size: 14px;
+        margin: 0;
+        align-self: start;
+    }
+
+    /* styling weather box */
     .placeholder-box-weather {
         grid-row: 5/6;
         grid-column: 2/3;
+        justify-self: end;
+        margin-right: 0;
+        margin-bottom: 15px;
+        border-radius: 5px 0 0 5px;
     }
 
     /* STYLING FOOTER */
@@ -113,11 +193,11 @@
         display: grid;
         grid-template-columns: 1fr 350px 1fr;
         grid-template-rows: 150px 25px;
+        padding-bottom: 20px;
     }
 
     .footer-logo {
         width: 100px;
-        /* margin-left: 50px; */
         margin-left: 60px;
         margin-top: 0;
     }
@@ -140,7 +220,7 @@
         display: block;
         grid-column: 1/4;
         justify-self: center;
-        border-top: 0.2px solid black;
+        border-top: 0.2px solid #fff;
         width: 95%;
     }
 
