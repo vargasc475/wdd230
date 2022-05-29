@@ -1,22 +1,24 @@
 // GET ELEMENTS
-const temperature = document.querySelector('#weather-p');
-const spanT = temperature.getElementsByTagName('span');
-const windSpeed = document.getElementById('weather-km');
-const spanW = windSpeed.getElementsByTagName('span');
+const temperature = parseFloat(document.getElementById('temperature').innerText);
+const windSpeed = parseFloat(document.getElementById('wind-speed').innerText);
 const windC = document.getElementById('weather-N');
 
-for (const s of spanT) {
-    const number = s.innerHTML;
-    let F = (number * 1.8) + 32;
-    console.log(parseFloat(F));
+// CONVERT CELSIUS TO FARENHEIT
+const f = (temperature * 1.8) + 32;
+
+// CONVERT KM/H TO MPH
+const mph = windSpeed / 1.609;
+
+// DISPLAY WIND CHILL OR N/A IN THE SCREEN
+if (f < 51 && mph > 3) {
+    let windChill = 35.74 + 0.6215 * f - 35.75 * mph**0.16 + 0.4275 * f * mph**0.16;
+    windC.innerText = windChill.toFixed(2);
+} else {
+    windC.innerText = "N/A";
 }
 
-for (const T of spanW) {
-    const number = T.innerHTML;
-    let MilePH = number / 1.609;
-    console.log(parseFloat(MilePH))
-}
 
-const windChill = 35.74 + 0.6215 * 44.6 - 35.75 * 3.3**0.16 + 0.4275 * 44.6 * 3.3**0.16;
-windC.innerText = windChill.toFixed(2);
+console.log(f);
+console.log(windSpeed);
+
 
