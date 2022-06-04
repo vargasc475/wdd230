@@ -149,7 +149,7 @@ nav ul li:hover {
     background-color: #004346;
     flex: 1 1 auto;
 }
-/* STYLING MAIN */
+/* STYLING HOME MAIN */
 
 main {
     display: grid;
@@ -388,6 +388,76 @@ main {
     display: none;
 
 }
+
+/* STYLING DISCOVER MAIN */
+
+#discover-main {
+    height: 1950px;
+}
+
+#discover #last-visit {
+    background-color: #004346;
+    color: #fff;
+    margin-top: 0;
+    padding: 10px;
+    width: fit-content;
+}
+
+#discover h2 {
+    text-align: center;
+    background-color: #004346;
+    color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#discover p {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#discover #tourist-places p {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+}
+
+#discover h3 span {
+    padding: 1px 4px;
+    background-color: #09bc89;
+    color: #fff;
+}
+
+#discover h3 {
+    margin-left: 15px;
+}
+
+#discover picture {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #BB9F06;
+    margin: 10px 32px;
+    padding: 10px 0;
+}
+
+#discover picture img[data-src] {
+    filter: blur(0.2em);
+}
+
+#discover picture img {
+    filter: blur(0em);
+    transition: filter 1.5s;
+    border-radius: 10px;
+}
+
+#tourist-places h2 {
+    background-color: #BB9F06;
+    border: .5px solid black;
+    font-size: 20px;
+}
+
 /* STYLING THE FOOTER */
 
 .medium {display: none;}
@@ -426,7 +496,12 @@ footer h2 {
 }
 
 footer a {
+    color: #BB9F06;
+}
+
+footer a:hover {
     text-decoration: none;
+    color: #fff;
 }
 
 .copy {
