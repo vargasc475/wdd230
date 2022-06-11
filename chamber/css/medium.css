@@ -5,11 +5,11 @@
     }
 
 
-    /* STYLING BANNER */
+    /*-------- STYLING BANNER -------*/
     #banner {
         display: none;
     }
-    /* STYLING HEADER */
+    /*------- STYLING HEADER --------*/
     header {
         display: grid;
         grid-template-columns: 150px 1fr 1fr 1fr;
@@ -53,10 +53,6 @@
         grid-template-rows: 453px 250px 350px 250px 300px;
         grid-template-columns: 480px 1fr;
     }
-
-    /* main div, main, section {
-        font-size: 16px;
-    } */
 
     /* styling hero box */
 
@@ -185,7 +181,7 @@
         border-radius: 5px 0 0 5px;
     }
 
-    /* STYLING DISCOVER MAIN */
+    /*-------- STYLING DISCOVER MAIN --------*/
 
     #discover-main {
         height: 3050px;
@@ -244,6 +240,36 @@
         margin: 50px 20px;
     }
 
+    /*-------- STYLING FORM MAIN ---------*/
+
+    #form-page h1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        font-size: 20px;
+    }
+
+    form {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        font-size: 18px;
+    }
+
+    form fieldset {
+        width: fit-content;
+        margin: 2rem auto 1rem;
+    }
+
+    form input.submitBtn {
+        margin: 0 29%;
+    }
+
+    /*-------- STYLING THANKS MAIN ---------*/
+
+
+#form-page .thanks-div {
+    grid-column: 1/3;
+    margin: 50px 50px;
+}
 
     /* STYLING FOOTER */
 

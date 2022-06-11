@@ -5,7 +5,7 @@
     }
 
 
-    /* STYLING BANNER */
+    /*-------- STYLING BANNER ----------*/
     #banner {
         display: none;
         grid-template-columns: 1fr 400px;
@@ -20,7 +20,7 @@
         justify-self: center;
     }
 
-    /* STYLING HEADER */
+    /*--------- STYLING HEADER ---------*/
     .header-logo {
         width: 70px;
     }
@@ -66,7 +66,7 @@
         display: none;
     }
 
-    /* STYLING MAIN */
+    /*----------- STYLING MAIN -----------*/
 
     main {
         display: grid;
@@ -291,19 +291,11 @@
         border-radius: 5px;
     }
 
-    /* STYLING DISCOVER MAIN */
+    /*---------- STYLING DISCOVER MAIN ------------*/
 
     #discover-main {
         height: 3550px;
     }
-
-    /* #discover #last-visit {
-        background-color: #004346;
-        color: #fff;
-        margin-top: 0;
-        padding: 10px;
-        width: fit-content;
-    } */
 
     #discover {
         grid-column: 1/4;
@@ -353,10 +345,6 @@
         margin: 10px 300px;
     }
 
-    /* #tourist-places #picture-1, #tourist-places #picture-3, #tourist-places #picture-5 {
-        justify-content: flex-end;
-    } */
-
     #tourist-places h2 {
         border: none;
         text-align: center;
@@ -364,12 +352,99 @@
         margin: 50px 20px;
     }
 
+    /*---------- STYLING FORM PAGE ---------*/
+
+    #form-page {
+        height: 850px;
+        display: grid;
+        grid-template-rows: none;
+    }
+
+    #form-page h1 {
+    grid-column: 1/4;
+    font-size: 24px;
+    }
+
+    form {
+        grid-column: 1/4; 
+        margin-bottom: 60px;
+    }
+
+    form fieldset {
+        width: 70%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*---------- GRID LAYOUT -------------*/
+
+    form fieldset label:nth-child(1), form fieldset label:nth-child(2), form fieldset label:nth-child(3) {
+        grid-column: 1/2;
+    }
+
+    form fieldset label:nth-child(4), form fieldset label:nth-child(5), form fieldset label:nth-child(6) {
+        grid-column: 2/3;
+    }
+
+    form fieldset label:nth-child(4) {
+        grid-row: 1/2;
+    }
+
+    form fieldset label:nth-child(5) {
+        grid-row: 2/3;
+    }
+
+    form fieldset label.businessD {
+        margin-top: 15px;
+    }
+
+    /* ----------------------------------- */
+
+    form label.businessI, form label.personalI, form div, form label.businessD {
+        font-size: 18px;
+    }
+
+    form label.personalI input, form label#businessI input {
+        padding: .5rem;
+        max-width: none;
+    }
+
+    form div.levels {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    form input.submitBtn {
+        margin: 0 0 0 58%;
+        font-size: 24px;
+    }
+
+    form label span.descriptionNP {
+        display: none;
+    }
+ 
+    form fieldset p {
+        display: block;
+        color: #fff;
+        margin: 0 2rem .2rem;
+    } 
+
+    form fieldset label textarea {
+        max-width: none;
+        height: 80%;
+    }
+    
+    /*-------- STYLING THANKS MAIN ---------*/
+
+#form-page .thanks-div {
+    grid-column: 1/4;
+}
+
 
     /* STYLING FOOTER */
 
     footer {
         display: grid;
-        /* grid-template-columns: 1fr 600px 400px; */
         grid-template-rows: 150px 25px;
         padding-bottom: 22px;
     }

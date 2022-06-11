@@ -13,7 +13,7 @@ p, nav, div, article {
     font-size: 12px;
 }
 
-/* STYLING BANNER */
+/*------- STYLING BANNER --------*/
 #banner {
     display: none;
     grid-template-columns: 1fr 40px;
@@ -37,7 +37,7 @@ p, nav, div, article {
  }
 
 
-/* STYLING HEADER */
+/*-------- STYLING HEADER --------*/
 header {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -149,7 +149,7 @@ nav ul li:hover {
     background-color: #004346;
     flex: 1 1 auto;
 }
-/* STYLING HOME MAIN */
+/*-------- STYLING HOME MAIN ---------*/
 
 main {
     display: grid;
@@ -182,10 +182,18 @@ main {
     bottom: 120px;
     left: 120px;
     background-color: #09bc89;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     width: 155px;
+    text-decoration: none;
+    color: black;
 }
+
+.button:hover {
+    background-color: #004346;
+    color: #fff;
+}
+
 
 /* styling event box */
 
@@ -309,10 +317,6 @@ main {
 
 
 .placeholder-box-join {
-    /* background-color: rgb(204, 204, 204);
-    border: 1px solid grey;
-    margin: 7px;
-    padding: 20px; */
     display: none;
 }
 
@@ -389,7 +393,7 @@ main {
 
 }
 
-/* STYLING DISCOVER MAIN */
+/*-------- STYLING DISCOVER MAIN ---------*/
 
 #discover-main {
     height: 1950px;
@@ -458,7 +462,113 @@ main {
     font-size: 20px;
 }
 
-/* STYLING THE FOOTER */
+/*-------- STYLING FORM MAIN -----------*/
+
+#form-page {
+    height: 1100px;
+    grid-template-rows: 100px 1000px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#form-page h1 {
+    font-size: 16px;
+    text-align: center;
+    height: 20px;
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #fff;
+    border-top: 10px solid #BB9F06;
+    border-bottom: 10px solid #BB9F06;
+    color: #004346;
+}
+
+form fieldset {
+    margin: 2rem 1rem;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    background-color: #004346;
+}
+
+form legend {
+    color: #172A3A;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.personalI, form label.businessI {
+    display: block;
+    padding: .5rem;
+    color: #09bc89;
+    font-size: .8rem;
+}
+
+form label.businessD {
+    font-size: 14px;
+    display: block;
+    color: #09bc89;
+    padding: 1rem .5rem .5rem .5rem;
+    
+}
+
+form div {
+    font-size: 16px;
+    margin: 2rem 1rem 0 0;
+    color: #fff;
+    border-bottom:1px solid #09bc89
+}
+
+form label.personalI input, form label#businessI input, textarea{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 90%;
+    max-width: 20rem;
+    background-color: #fff;
+}
+
+form label.personalI input:required, form label#businessI input:required {
+    border-right: 6px solid red;
+}
+form label.personalI input:required:valid, form label#businessI input:required:valid {
+    border-right: 6px solid green;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #BB9F06;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: .1rem 1rem;
+    width: 90%;
+    max-width: 20rem;
+}
+
+form input.submitBtn:hover {
+    background-color: #004346;
+}
+
+form fieldset p {
+    display: none;
+}
+
+/*-------- STYLING THANKS MAIN ---------*/
+
+#form-page .thanks-div h2 {
+    margin: 50px 10px;
+    text-align: center;
+    background-color: #004346;
+    color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+/*-------- STYLING THE FOOTER ----------*/
 
 .medium {display: none;}
 
