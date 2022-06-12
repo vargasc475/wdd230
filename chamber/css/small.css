@@ -518,7 +518,7 @@ form div {
     border-bottom:1px solid #09bc89
 }
 
-form label.personalI input, form label#businessI input, textarea{
+form label.personalI input, form label#businessP input, form label#businessI input, textarea{
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
