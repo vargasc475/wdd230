@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Christian Vargas">
     <meta name="description" content="A chamber of commerce page">
-    <title>The Garden Chamber - Join</title>
+    <title>The Garden Chamber - Directory</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <script src="js/script.js" defer></script>
-    <script src="js/windchill.js" defer></script>
+    <!-- <script src="js/windchill.js" defer></script> -->
+    <script src="js/directoryData.js" defer></script>
 </head>
 <body>
     <div id="banner">
@@ -35,39 +36,15 @@
         <nav>
             <ul id="nav">
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main id="form-page">
-        <h1>Join to our Chamber of Commerce!</h1>
-        <form method="get" action="thanks.html">
-            <fieldset>
-                <label class="personalI">First Name* <input type="text" name="fname" required></label>
-                <label class="personalI">Last Name* <input type="text" name="lname" required></label>
-                <label class="personalI">Phone Number* <input type="tel" name="phone" required></label>
-                <label class="personalI">Email* <input type="email" name="email" required></label> 
-                <label class="businessI" id="businessP">Business Position <input type="text" name="businessPosition"></label>
-                <label class="businessI" id="businessI">Business Title/Name* <input type="text" name="businessName" pattern="[A-Za-z-]{7,}" required></label>
-                <div class="levels">
-                    <div>Membership Level</div>
-                    <label class="businessI"><input type="radio" name="membershipLevel"> NP Membership <span class="descriptionNP">(None Profit)</span></label>
-                    <p><em>NOTE: Is for none profit organizations and there is no fee</em></p>
-                    <label class="businessI"><input type="radio" name="membershipLevel"> Bronze Membership <span class="descriptionB"></span></label>
-                    <p><em>Benefits: trainings</em></p>
-                    <label class="businessI"><input type="radio" name="membershipLevel"> Silver Membership <span class="descriptionS"></span></label>
-                    <p><em>Benefits: trainings, advertising</em></p>
-                    <label class="businessI"><input type="radio" name="membershipLevel"> Gold Membership <span class="descriptionG"></span></label>
-                    <p><em>Benefits: trainings, advertising, event discounts</em></p>
-                </div>
-                <label class="businessD">Business Description <textarea name="businesDescription" rows="4" cols="50"></textarea></label>
-                <input type="hidden" name="date" value="CurrentTime"> 
-                <input type="hidden" name="time" value="CurrentDate">
-            </fieldset>
-            <input type="submit" value="Join the Chamber" class="submitBtn">
-        </form>
+    <main id="directory">
+        <h2 class="directory_h2">Directory</h2>
+        <div class="directory_cards"></div>
     </main>
     <footer>
         

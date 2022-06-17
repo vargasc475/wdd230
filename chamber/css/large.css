@@ -435,9 +435,20 @@
     
     /*-------- STYLING THANKS MAIN ---------*/
 
-#form-page .thanks-div {
-    grid-column: 1/4;
-}
+    #form-page .thanks-div {
+        grid-column: 1/4;
+    }
+
+    /*--------- STYLING DIRECTORY MAIN --------*/
+
+    
+    #directory {
+        height: 1300px;
+    }
+
+    #directory .directory_h2 {
+        font-size: 26px;
+    }
 
 
     /* STYLING FOOTER */

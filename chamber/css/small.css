@@ -568,6 +568,77 @@ form fieldset p {
     padding: 2rem;
 }
 
+/*---------- STYLING DIRECTORY MAIN ---------*/
+
+#directory {
+    height: 3470px; 
+    grid-template-rows: 1fr;
+}
+
+#directory .directory_h2 {
+    font-size: 20px;
+    text-align: center;
+    height: 20px;
+    margin: 15px 0;
+    padding: 1rem;
+    background-color: #fff;
+    border-top: 10px solid #BB9F06;
+    border-bottom: 10px solid #BB9F06;
+    color: #004346;
+    grid-column: 1/4;
+}
+
+div.directory_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-column: 1/4;
+}
+
+div.directory_cards img {
+    width: 150px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+div.directory_cards section {
+    text-align: center;
+    background-color: #004346;
+    margin: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+div.directory_cards section h2 {
+    color: #BB9F06;
+}
+
+div.directory_cards section a {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+div.directory_cards section a:hover {
+    color: #09bc89;
+}
+
+div.directory_cards section p:nth-child(6) {
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: auto auto 10px auto;
+    color:#004346;
+    box-shadow: 0 0 10px #09bc89;
+    margin-top: 10px;
+}
+
+div.directory_cards section p:nth-child(6):hover {
+    box-shadow: 0 0 10px #BB9F06;
+}
+
+
 /*-------- STYLING THE FOOTER ----------*/
 
 .medium {display: none;}
