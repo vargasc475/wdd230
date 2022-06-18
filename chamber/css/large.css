@@ -439,16 +439,53 @@
         grid-column: 1/4;
     }
 
-    /*--------- STYLING DIRECTORY MAIN --------*/
+    /*--------- STYLING DIRECTORY MAIN "CARDS" --------*/
 
     
-    #directory {
-        height: 1300px;
+    .directory {
+        height: 1420px;
     }
+
+    .directory_cards section p, .directory_cards section a {
+        font-size: 16px;
+    }
+
 
     #directory .directory_h2 {
         font-size: 26px;
     }
+
+    #directory #grid {
+        margin-left: 100px;
+    }
+
+    /*--------- STYLING DIRECTORY MAIN "LIST" --------*/
+
+    .list {
+        height: 1350px;
+    }
+
+    .directory_list section p:nth-child(2) {
+        display: block;
+    }
+    
+    .directory_list section p:nth-child(3) {
+        display: block;
+    }
+
+    .list .directory_list section {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .directory_list section p {
+        font-size: 16px;
+    }
+
+    .list #grid-button, .directory #grid-button {
+        justify-self: end;
+        margin-right: 150px;
+    }
+
 
 
     /* STYLING FOOTER */

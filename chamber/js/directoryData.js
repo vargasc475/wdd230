@@ -45,3 +45,30 @@ function buildDirectoryCards(data) {
 }
 
 getData()
+
+// ---- WORKING WITH "CARDS" AND "LIST" -----
+
+const gridButton = document.querySelector('#grid-button');
+const listButton = document.querySelector('#list-button');
+const display = document.querySelector('article');
+const mainHeight = document.querySelector('.directory');
+
+gridButton.addEventListener("click", () => {
+
+    display.classList.add("directory_cards");
+    display.classList.remove("directory_list");
+    mainHeight.classList.remove("list");
+    mainHeight.classList.add("cards");
+});
+
+listButton.addEventListener("click", () => {
+
+    display.classList.add("directory_list");
+    display.classList.remove("directory_cards");
+    mainHeight.classList.add("list");
+    mainHeight.classList.remove("cards");
+});
+
+
+
+

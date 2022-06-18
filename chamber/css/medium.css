@@ -271,16 +271,48 @@
         margin: 50px 50px;
     }
 
-    /*------ STYLING DIRECTORY MAIN -------*/
-    #directory {
+    /*------ STYLING DIRECTORY MAIN "CARDS" -------*/
+    .directory {
         height: 2100px;
     }
 
-    #directory .directory_h2 {
+    .directory .directory_h2 {
         font-size: 24px;
     }
 
-    /* STYLING FOOTER */
+    /*------ STYLING DIRECTORY MAIN "LIST" -------*/
+
+    .list {
+        height: 1400px;
+    }
+
+    .list .directory_list img {
+        display: block;
+        width: 100px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        border-radius: 5px;
+    }
+
+    .list .directory_list section {
+        grid-template-columns: repeat(4, 1fr);
+        font-size: 16px;
+        justify-items: center;
+        align-items: center;
+    }
+
+
+    .list #grid-button, .directory #grid-button {
+        justify-self: start;
+        margin-left: 50px;
+    }
+
+    .list #list-button, .directory #list-button {
+        justify-self: end;
+        margin-right: 50px;
+    }
+
+    /*--------- STYLING FOOTER ----------*/
 
     .small {display: none;}
 
