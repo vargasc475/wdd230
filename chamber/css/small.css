@@ -576,27 +576,41 @@ form fieldset p {
 /*---------- STYLING DIRECTORY MAIN "CARDS" ---------*/
 
 .directory {
-    height: 3470px; 
+    height: 3480px; 
     grid-template-rows: 1fr;
 }
 
-.directory #grid-button {
+.directory #grid-button, .list #grid-button {
     display: block;
     grid-column: 1/4;
     width: fit-content;
     height: fit-content;
-    padding: 10px;
-    margin: 0 15px;
+    padding: 15px;
+    margin: 15px 30px;
+    align-self: end;
+    border-radius: 5px;
+    background-color: #172A3A;
+} 
+
+.directory #grid-button:hover {
+    background-color: #09bc89;
 }
 
-.directory #list-button {
+.directory #list-button, .list #list-button {
     display: block;
     grid-column: 1/4;
     width: fit-content;
     height: fit-content;
-    padding: 10px;
-    margin: 0 15px;
+    padding: 15px;
+    margin: 15px 30px;
     justify-self: end;
+    align-self: end;
+    border-radius: 5px;
+    background-color: #172A3A;
+}
+
+.directory #list-button:hover {
+    background-color: #09bc89;
 }
 
 .directory .directory_h2 {
@@ -610,6 +624,7 @@ form fieldset p {
     border-bottom: 10px solid #BB9F06;
     color: #004346;
     grid-column: 1/4;
+    grid-row: 1/2;
 }
 
 article.directory_cards {
