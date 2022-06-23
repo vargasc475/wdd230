@@ -8,7 +8,7 @@ const figcaption = document.createElement('figcaption');
 const body = document.querySelector('body');
 
 
-const url =  'http://api.openweathermap.org/data/2.5/forecast?q=Fairbanks&units=imperial&appid=7ef37c61e45f8bf0e9e8fdca462fac21';
+const url =  'https://api.openweathermap.org/data/2.5/forecast?q=Fairbanks&units=imperial&appid=7ef37c61e45f8bf0e9e8fdca462fac21';
 
 async function apiFetch() {
     try {
