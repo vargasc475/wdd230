@@ -126,13 +126,37 @@
         padding: 20px;
     }
 
-    #join-button {
+    /* #join-button {
         background-color: #09bc89;
         margin: 15px 30px;
         border-radius: 5px;
         font-size: 30px;
         padding: 15px;
         box-shadow: 0 0 30px black;
+    }
+
+    #join-button:hover {
+        background-color: #004346;
+        color: #fff;
+    } */
+
+    #join-button a {
+        text-decoration: none;
+        background-color: #09bc89;
+        color: #004346;
+        border-radius: 5px;
+        font-size: 28px;
+        padding: 15px;
+        box-shadow: 0 0 20px black;
+    }
+
+    #join-button a:hover {
+        background-color: #004346;
+        color: #fff;
+    }
+
+    .placeholder-box-join:hover {
+        background-color: #09bc89;
     }
 
     #join-p {

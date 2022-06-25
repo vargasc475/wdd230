@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <script src="js/script.js" defer></script>
-    <script src="js/windchill.js" defer></script>
+    <script src="js/currentWeather.js" defer></script>
 </head>
 <body>
     <div id="banner">
@@ -44,9 +44,9 @@
     <main>
         <div class="placeholder-box-hero">
             <picture>
-                <source media="(min-width: 700px) and (max-width: 999px)" srcset="images/heromedium.jpg">
-                <source media="(min-width: 1000px)" srcset="images/herolarge.jpg">
-                <img src="images/herosmall.jpg" alt="Maracay city from eldiariohabla" class="hero-image">
+                <source media="(min-width: 700px) and (max-width: 999px)" srcset="images/hero-medium.jpg">
+                <source media="(min-width: 1000px)" srcset="images/hero-large.jpg">
+                <img src="images/hero-small.jpg" alt="Maracay city from eldiariohabla" class="hero-image">
             </picture>
             <h2 class="welcome">Welcome to Garden Chamber</h2>
             <a href="join.html" class="button">Join the Chamber</a>
@@ -59,12 +59,12 @@
         </article>
         <div class="placeholder-box-weather">
             <h2 id="weather-h2">Weather</h2>
-            <img src="images/cloudy.png" alt="Cloudy" id="weather-img">
-            <p id="weather-p"><span id="temperature">7</span>°C</p>
-            <h2 id="weather-h3">Partly Cloudy</h2>
+            <img id="weather-img">
+            <p id="weather-p"><span id="temperature"></span>°C</p>
+            <h2 id="weather-h3"></h2>
             <p id="weather-speed">Wind Speed:</p>
             <p id="weather-chill">Wind Chill:</p>
-            <p id="weather-km"><span id="wind-speed">5.3</span>km/h</p>
+            <p id="weather-km"><span id="wind-speed"></span> mph</p>
             <p id="weather-N">N/A</p>
         </div>
         <div class="placeholder-box-news">
@@ -77,7 +77,7 @@
                et, veniam vel est iste debitis libero. Veniam, quas?</p>
         </div>
         <div class="placeholder-box-join">
-            <h2 id="join-button">Join Us!</h2>
+            <h2 id="join-button"><a href="join.html">Join Us!</a></h2>
             <p id="join-p">Discover how to join the chamber of commerce and how
                to it will benefit your organization!</p>
         </div>
@@ -119,6 +119,7 @@
             <p>info@gardench.org</p>
             <p>+(223) 2070-2300</p>
             <p><a href="https://maps.google.com">&#128205; Location Map</a></p>
+            <p>The weather information is provided by <em><a href="https://openweathermap.org/" target="_blank">openweathermap</a></em></p>
         </div>
         <div class="small">
             <p class="copy"></p>
