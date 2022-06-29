@@ -98,7 +98,7 @@
     }
 
     .placeholder-box-spot1, .placeholder-box-spot2 {
-        height: 90%;
+        height: fit-content;
         width: 90%;
     }
 
@@ -126,19 +126,6 @@
         padding: 20px;
     }
 
-    /* #join-button {
-        background-color: #09bc89;
-        margin: 15px 30px;
-        border-radius: 5px;
-        font-size: 30px;
-        padding: 15px;
-        box-shadow: 0 0 30px black;
-    }
-
-    #join-button:hover {
-        background-color: #004346;
-        color: #fff;
-    } */
 
     #join-button a {
         text-decoration: none;
@@ -208,7 +195,8 @@
     /*-------- STYLING DISCOVER MAIN --------*/
 
     #discover-main {
-        height: 3050px;
+        height: fit-content;
+        display: block;
     }
 
     #discover {
@@ -266,7 +254,7 @@
 
     /*-------- STYLING FORM MAIN ---------*/
 
-    #form-page h1 {
+    #form-page h2 {
         grid-column: 1/3;
         grid-row: 1/2;
         font-size: 20px;
@@ -297,17 +285,19 @@
 
     /*------ STYLING DIRECTORY MAIN "CARDS" -------*/
     .directory {
-        height: 2100px;
+        height: fit-content;
     }
 
     .directory .directory_h2 {
-        font-size: 24px;
+        font-size: 30px;
+        padding: 10px 0;
+        height: fit-content;
     }
 
     /*------ STYLING DIRECTORY MAIN "LIST" -------*/
 
     .list {
-        height: 1400px;
+        height: fit-content;
     }
 
     .list .directory_list img {
@@ -328,13 +318,24 @@
 
     .list #grid-button, .directory #grid-button {
         justify-self: start;
-        margin-top: 100px;
+        margin-top: 120px;
         margin-left: 200px;
     }
 
     .list #list-button, .directory #list-button {
         justify-self: end;
         margin-right: 200px;
+        margin-bottom: 0;
+    }
+
+    /*--------- STYLING CONTACT MAIN ---------*/
+
+    #contact-form fieldset label {
+        margin: 22px 25px 0 5px;
+    }
+
+    #contact-information p {
+        font-size: 16px;
     }
 
     /*--------- STYLING FOOTER ----------*/

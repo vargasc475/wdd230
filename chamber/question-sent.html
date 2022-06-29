@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Christian Vargas">
     <meta name="description" content="A chamber of commerce page">
-    <title>The Garden Chamber - Join</title>
+    <title>The Garden Chamber - Contact Us</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <script src="js/script.js" defer></script>
-    <script src="js/windchill.js" defer></script>
+    <script src="js/lazyload.js" defer></script>
+    <script src="js/localStorage.js" defer></script>
 </head>
 <body>
     <div id="banner">
@@ -36,17 +37,38 @@
             <ul id="nav">
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main id="form-page">
-        <h1>Join to our Chamber of Commerce!</h1>
-        <div class="thanks-div">
-            <h2>Thank you for joining us... we are happy to know more about you and your business. 
-                We will get in touch with you to give you more information and you can enjoy all the benefits! </h2>
-        </div>
+    <main id="contact" class="directory">
+        <h2 class="directory_h2">Contact Us</h2>
+        <section id="contact-form">
+            <h3>Your questions have been sent! We will contact you.</h3>
+            <form method="get" action="index.html">
+                <fieldset>
+                    <h2>Contact Form</h2>
+                    <label>Name* <input type="text" name="name" required></label>
+                    <label>Email* <input type="email" name="email" required></label>
+                    <label>Tell us about your questions* <textarea name="question" cols="5" rows="5"></textarea></label>
+                </fieldset>
+                <input type="submit" value="Send Question" id="questionBtn">
+            </form>
+        </section>
+        <section id="contact-information">
+            <h2>Contact information</h2>
+            <h3>Email</h3>
+            <p>info@gardench.com</p>
+            <h3>Phone</h3>
+            <p>+(223) 2070-2300</p>
+            <h3>Social Media</h3>
+            <p><a href="https//:facebook.com" target="_blank">Facebook/GardenChamber</a></p>
+            <p><a href="https//:facebook.com" target="_blank">Instagram/GardenChamber</a></p>
+            <h3>Working Hours</h3>
+            <p>We will be able to answer between 9:00am - 4:00pm</p>
+            <p>From Monday to Friday</p>
+        </section>
     </main>
     <footer>
         

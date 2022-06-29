@@ -54,12 +54,13 @@ header {
     padding: 5px;
 }
 
-.header-title h1 {
+.header-title h1, .header-title h3 {
     margin: 0;
 }
 
-.header-title h3 {
-    margin: 0;
+.header-title h1 a, .header-title h3 a {
+    text-decoration: none;
+    color: #fff;
 }
 
 
@@ -148,6 +149,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #FFF;
+    padding: 0 135px;
 }
 
 nav ul li:hover {
@@ -157,8 +159,11 @@ nav ul li:hover {
 /*-------- STYLING HOME MAIN ---------*/
 
 main {
-    display: grid;
-    grid-template-rows: 200px 200px 300px 310px 670px;
+    display: flex;
+    /* grid-template-rows: 200px 200px 300px 310px 670px; */
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
+    flex-direction: column;
+    height: fit-content;
 }
 
 /* styling hero box */
@@ -166,6 +171,7 @@ main {
 .placeholder-box-hero {
     grid-row: 1/2;
     margin: 20px 0 7px;
+    height: fit-content;
 }
 
 .hero-image {
@@ -209,6 +215,7 @@ main {
     display: grid;
     grid-template-rows: repeat(4, 40px);
     justify-items: center;
+    height: fit-content;
 }
 
 #event-h2 {
@@ -238,6 +245,7 @@ main {
     background-color: #004346;
     margin: 10px 0;
     padding: 20px;
+    height: fit-content;
 }
 
 #news-h2 {
@@ -259,7 +267,7 @@ main {
 
 .placeholder-box-weather {
     background-color: #004346;
-    margin: 7px;
+    margin: auto;
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -267,6 +275,7 @@ main {
     width: 245px;
     justify-self: center;
     border-radius: 5px;
+    height: fit-content;
 }
 
 #weather-h2 {
@@ -325,18 +334,19 @@ main {
     display: none;
 }
 
-/* styling potlight */
+/* styling spotlight */
 
 .placeholder-box-spotlight {
     background-color: #004346;
-    margin: 7px 0 15px;
+    /* margin: 7px 0 15px; */
     display: grid;
-    grid-template-rows: 300px 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: fit-content;
+    padding: 30px 0;
 }
 
 .placeholder-box-spot1, .placeholder-box-spot2 {
     background-color: rgb(204, 204, 204);
-    height: 90%;
     width: 90%;
     box-shadow: 0 0 10px black;
     background-color: #004346;
@@ -349,6 +359,7 @@ main {
     justify-self: center;
     text-align: center;
     color: #fff;
+    height: fit-content;
 }
 
 #spot1-h2 {
@@ -374,6 +385,7 @@ main {
     justify-self: center;
     text-align: center;
     color: #fff;
+    height: fit-content;
 }
 
 #spot2-h2 {
@@ -475,7 +487,7 @@ main {
     font-family: 'Montserrat', sans-serif;
 }
 
-#form-page h1 {
+#form-page h2 {
     font-size: 16px;
     text-align: center;
     height: 20px;
@@ -504,14 +516,14 @@ form legend {
 form label.personalI, form label.businessI {
     display: block;
     padding: .5rem;
-    color: #09bc89;
+    color: #ebc90b;
     font-size: .8rem;
 }
 
 form label.businessD {
     font-size: 14px;
     display: block;
-    color: #09bc89;
+    color: #e6c403;
     padding: 1rem .5rem .5rem .5rem;
     
 }
@@ -576,33 +588,35 @@ form fieldset p {
 /*---------- STYLING DIRECTORY MAIN "CARDS" ---------*/
 
 .directory {
-    height: 3480px; 
+    height: fit-content; 
     grid-template-rows: 1fr;
+    display: grid;
+    /* grid-template-rows: 200px 200px 300px 310px 670px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
 }
 
-.directory #grid-button, .list #grid-button {
+.directory #grid-button {
     display: block;
     grid-column: 1/4;
     width: fit-content;
     height: fit-content;
     padding: 15px;
-    margin: 15px 30px;
-    align-self: end;
+    margin: 100px 30px 0;
     border-radius: 5px;
     background-color: #172A3A;
-} 
+}
 
 .directory #grid-button:hover {
     background-color: #09bc89;
 }
 
-.directory #list-button, .list #list-button {
+.directory #list-button {
     display: block;
     grid-column: 1/4;
     width: fit-content;
     height: fit-content;
     padding: 15px;
-    margin: 15px 30px;
+    margin: 100px 30px 60px;
     justify-self: end;
     align-self: end;
     border-radius: 5px;
@@ -688,7 +702,7 @@ article.directory_cards section p:nth-child(6):hover {
 }
 
 .list {
-    height: 1100px;
+    height: fit-content;
 }
 
 .list .directory_list {
@@ -748,6 +762,88 @@ article.directory_cards section p:nth-child(6):hover {
 
 .directory_list section p:nth-child(6):hover {
     box-shadow: 0 0 10px #BB9F06;
+}
+
+/*----------- STYLING CONTACT MAIN ------------*/
+
+#contact {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contact .directory_h2 {
+    font-size: 1.5em;
+}
+
+#contact-form {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    width: 326px;
+    margin: auto;
+}
+
+#contact-form fieldset {
+    padding-right: 20px;
+    color: #e6c403;
+}
+
+
+#contact-form fieldset h2 {
+    margin-left: 5px;
+    color: #fff;
+}
+
+#contact-form #questionBtn {
+    margin: 0 100px;
+    background-color: #BB9F06;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+}
+
+#contact-form #questionBtn:hover {
+    background-color: #004346;
+}
+
+#contact-information {
+    padding: 10px;
+    height: fit-content;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contact-information h2 {
+    color: #004346;
+    border-bottom: .5px solid black;
+}
+
+#contact-information h3 {
+    color: #9b8404;
+}
+
+
+#contact-form label {
+    margin: 22px 22px 0 5px;
+}
+
+#contact-form input, #contact-form textarea {
+    margin: 0 5px;
+}
+
+#contact-form input {
+    margin-bottom: 10px;
+}
+
+#contact-form h3 {
+    background-color: #09bc89;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 5px;
+    margin: 5px;
+    color: #172A3A;
 }
 
 
