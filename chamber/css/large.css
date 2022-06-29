@@ -38,16 +38,15 @@
     nav {
         grid-column: 3/4;
         grid-row: 1/2;
-        background-color: #09bc8960;
+        background-color: #0043469a;
         border-radius: 10px;
-        border-top: 1px solid #004346;
-        border-bottom: 1px solid #004346;
         font-size: 16px;
         justify-self: center;
     }
 
     nav ul li:hover {
         border-radius: 10px;
+        background-color: #09bc89;
     }
 
     nav ul li a {
