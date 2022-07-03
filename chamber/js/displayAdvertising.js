@@ -17,7 +17,7 @@ const spot2Img = document.createElement('img');
 const spot2P = document.createElement('p');
 const spot2Email = document.createElement('p');
 const spot2Number = document.createElement('p');
-const placeHolder2 = document.querySelector('placeholder-box-spot2');
+const placeHolder2 = document.querySelector('.placeholder-box-spot2');
 
 // get the SPOT3 elements
 const spot3H2 = document.createElement('h2');
@@ -25,7 +25,7 @@ const spot3Img = document.createElement('img');
 const spot3P = document.createElement('p');
 const spot3Email = document.createElement('p');
 const spot3Number = document.createElement('p');
-const placeHolder3 = document.querySelector('palceholder-box-spot3');
+const placeHolder3 = document.querySelector('.placeholder-box-spot3');
 
 async function getData() {
     let response = await fetch(url1);
