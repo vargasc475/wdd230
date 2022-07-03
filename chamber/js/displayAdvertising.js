@@ -72,7 +72,7 @@ function displayAdvertising(data) {
     placeHolder1.appendChild(spot1Number);
 
     // spotlight 2
-    spot2H2.setAttribute('spot2-h2');
+    spot2H2.setAttribute('id', 'spot2-h2');
     spot2H2.innerHTML = companie2.name;
 
     spot2Img.setAttribute('id', 'spot2-img');
