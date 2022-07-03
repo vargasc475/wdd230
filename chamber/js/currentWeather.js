@@ -1,9 +1,10 @@
 // ------ GET ELEMENTS 
 const temp = document.querySelector('#temperature');
-const img = document.querySelector('#weather-img');
-const description = document.querySelector('#weather-h3');
 const windS = document.querySelector('#wind-speed');
 const windC = document.querySelector('#weather-N');
+const placeHolder = document.querySelector('.placeholder-box-weather');
+const img = document.createElement('img');
+const description = document.createElement('h2');
 
 
 // get the the weather data from openweathermap.org
@@ -32,8 +33,10 @@ function displayWeather(weatherData) {
     
     // DISPLAY THE IMG AND DESCRITPION OF THE WEATHER
     const desc = weatherData.weather[0].description;
+    img.setAttribute('id', 'weather-img');
     img.setAttribute('src', `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`);
     img.setAttribute('alt', `${desc} icon`);
+    placeHolder.appendChild(img);
 
     // capitalize the first letter of each word
     const arr = desc.split(" ");
@@ -42,7 +45,9 @@ function displayWeather(weatherData) {
     }
     
     const capitalizeDesc = arr.join(" ");
+    description.setAttribute('id', 'weather-h3');
     description.innerHTML = capitalizeDesc;
+    placeHolder.appendChild(description);
 
 
     // CALCULATE FARENHEIT TO CELCIUS AND DISPLAY IN THE HTML
