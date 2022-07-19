@@ -43,6 +43,22 @@
         padding: 20px 0;
     }
 
+    .temple-header nav ul li:nth-child(2) {
+        background-color: #ff8600;
+    }
+
+    .temple-header nav ul li:nth-child(1) {
+        background-color: #f1f2f6;
+    }
+
+    .temple-header nav ul li:nth-child(1):hover {
+        background-color: #ff8600;
+    }
+
+    header nav ul li:nth-child(1) {
+        background-color: #ff8600;
+    }
+
     #call-to-action {
         justify-self: center;
         grid-column: 2/4;
@@ -50,6 +66,12 @@
 
     .social-header {
         grid-column: 4;
+    }
+
+    .temples .placeholder-principal-img div h1 {
+        margin: auto 200px;
+        padding: 30px 10px;
+        font-size: 30px;
     }
 
     /* -------- STYLING MAIN ------------ */
@@ -129,10 +151,36 @@
     }
 
     .placeholder-weather .three-daysW p:nth-child(1) {
-        /* grid-column: 1/3; */
         justify-self: center;
         grid-row: 1;
         grid-column: 1/3;
+    }
+
+    /* ----- STYLING TEMPLE MAIN ------- */
+
+
+    .temple-cards {
+        margin: 140px;
+    }
+
+    main.temples div.temple-cards #card1 button {
+        margin-top: 9%;
+        margin-left: 10%;
+    }
+
+    main.temples div.temple-cards #card2 button {
+        margin-top: 9%;
+        margin-left: 10%;
+    }
+
+    main.temples div.temple-cards #card3 button {
+        margin-top: 7%;
+        margin-left: 10%;
+    }
+
+    main.temples div.temple-cards #card4 button {
+        margin-top: 9%;
+        margin-left: 10%;
     }
 
     /* ------ STYLING FOOTER ------- */

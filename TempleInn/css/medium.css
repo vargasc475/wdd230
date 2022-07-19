@@ -28,6 +28,12 @@
         grid-column: 1/5;
     }
 
+    .temples .placeholder-principal-img div h1 {
+        margin: auto 100px;
+        padding: 20px 10px;
+        font-size: 20px;
+    }
+
     /* ---------STYLING MAIN ------------ */
 
     .placeholder-principal-img h1 {
@@ -79,6 +85,135 @@
     .placeholder-weather .three-daysW {
         grid-column: 2;
     }
+
+    /* ------- STYLING TEMPLE MAIN ------- */
+
+    main.temples div.temple-cards div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 40px 20px;
+        box-shadow: 0px 0px 20px #00044a;
+    }
+
+    main.temples div.temple-cards div img {
+        width: 100%;
+        grid-column: 1;
+    }
+    main.temples div.temple-cards div button {
+        top: 240px;
+        left: 260px;
+    }
+
+    main.temples div.temple-cards #card4 button {
+        margin-top: 50px;
+    }
+
+
+    main.temples div.temple-cards div h3 {
+        width: fit-content;
+        height: fit-content;
+        padding-right: 50px;
+    }
+
+    #addres-t {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #addres-d {
+        grid-column: 2;
+        grid-row: 2;
+        margin-top: 80px;
+    }
+
+    #telephone-t {
+        grid-column: 2;
+        grid-row: 2;
+        margin-top: 130px;
+    }
+
+    #telephone-d {
+        grid-column: 2;
+        grid-row: 2;
+        align-self: end;
+        text-align: start;
+        margin-left: 45px;
+        margin-bottom: 40px;
+    }
+
+    #email-t {
+        grid-column: 2;
+        grid-row: 3;
+        margin-top: 0;
+    }
+
+    #email-d {
+        grid-column: 2;
+        grid-row: 3;
+        align-self: end;
+        margin-top: 60px;
+        justify-self: start;
+        margin-left: 50px;
+    }
+
+    #announced-d, #groundbreaking-d, #dedicated-d, #history-t {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    #announced-d {
+        margin-top: 70px;
+        justify-self: start;
+        margin-left: 50px;
+        
+    }
+
+    #groundbreaking-d {
+        margin-top: 90px;
+        justify-self: start;
+        margin-left: 50px;
+    }
+
+    #dedicated-d {
+        margin-top: 110px;
+        justify-self: start;
+        margin-left: 50px;
+    }
+
+    #services-t {
+        margin-top: 0;
+    }
+
+    #services-d {
+        margin-top: 0;
+    }
+
+    #ordinance-t, #session-t, #ordinance-d, #session-d {
+        grid-column: 2;
+        grid-row: 5;
+    }
+
+    #ordinance-d {
+        margin-top: 80px;
+    }
+    
+    #session-t {
+        margin-top: 110px;
+    }
+
+    #session-d {
+        margin-top: 170px;
+    }
+
+    #closure-d, #closure-t {
+        grid-row: 5;
+        grid-column: 1;
+    }
+
+    #closure-d {
+        margin-top: 50px;
+    }
+
 
     /* -------STYLING FOOTER ---------- */
 

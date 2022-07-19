@@ -45,7 +45,6 @@ async function quoteFetch() {
     let response = await fetch(quoteUrl);
     if (response.ok) {
         let data = await response.json()
-        console.log(data);
         displayQuote(data);
     } else {
         throw Error(response.statusText0)
