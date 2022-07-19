@@ -264,33 +264,33 @@ nav ul a:hover {
 
 /* -------------- STYLING TEMPLES MAIN ------------- */
 
-main.temples div.temple-cards section {
+main.temples div.temple-cards div {
     background-color: #a3b8fe;
 } 
 
-main.temples div.temple-cards section h2 {
+main.temples div.temple-cards div h2 {
     color:#00044a;
     text-align: center;
     padding: 10px;
 }
 
-main.temples div.temple-cards section img {
+main.temples div.temple-cards div img {
     width: 100%;
 }
 
-main.temples div.temple-cards section h3 {
+main.temples div.temple-cards div h3 {
     padding-left: 10px;
     background-color: #00044a;
     color: #f1f2f6;
     padding: 10px;
 }
 
-main.temples div.temple-cards section p {
+main.temples div.temple-cards div p {
     text-align: center;
     padding: 0 10px;
 }
 
-main.temples div.temple-cards section #like {
+main.temples div.temple-cards div #like {
     /* margin-left: 100px; */
     width: 50px;
     background-color: transparent;
@@ -298,7 +298,7 @@ main.temples div.temple-cards section #like {
     border-radius: 30px;
 }
 
-main.temples div.temple-cards section button {
+main.temples div.temple-cards div button {
     width: 70px;
     height: 70px;
     background-color: #ff8600;
