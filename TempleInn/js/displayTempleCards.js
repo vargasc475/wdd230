@@ -22,7 +22,6 @@ const card3 = document.querySelector('#card3');
 const card4 = document.querySelector('#card4');
 
 // CREATE ELEMENTS FOR SECTION CARD 1
-const cardSection1 = document.createElement('section');
 const cardT1 = document.createElement('h2');
 const addresT1 = document.createElement('h3');
 const addres1 = document.createElement('p');
@@ -43,11 +42,8 @@ const session1 = document.createElement('p');
 const closureT1 = document.createElement('h3');
 const closureList1 = document.createElement('ul');
 const cardImg1 = document.createElement('img');
-const imgBtn1 = document.createElement('button');
-const button1 = document.createElement('img');
 
 // CREATE ELEMENTS FOR SECTION CARD 2
-const cardSection2 = document.createElement('section');
 const cardT2 = document.createElement('h2');
 const addresT2 = document.createElement('h3');
 const addres2 = document.createElement('p');
@@ -68,11 +64,8 @@ const session2 = document.createElement('p');
 const closureT2 = document.createElement('h3');
 const closureList2 = document.createElement('ul');
 const cardImg2 = document.createElement('img');
-const imgBtn2 = document.createElement('button');
-const button2 = document.createElement('img');
 
 // CREATE ELEMENTS FOR SECTION CARD 3
-const cardSection3 = document.createElement('section');
 const cardT3 = document.createElement('h2');
 const addresT3 = document.createElement('h3');
 const addres3 = document.createElement('p');
@@ -93,11 +86,8 @@ const session3 = document.createElement('p');
 const closureT3 = document.createElement('h3');
 const closureList3 = document.createElement('ul');
 const cardImg3 = document.createElement('img');
-const imgBtn3 = document.createElement('button');
-const button3 = document.createElement('img');
 
 // CREATE ELEMENTS FOR SECTION CARD 4
-const cardSection4 = document.createElement('section');
 const cardT4 = document.createElement('h2');
 const addresT4 = document.createElement('h3');
 const addres4 = document.createElement('p');
@@ -118,8 +108,6 @@ const session4 = document.createElement('p');
 const closureT4 = document.createElement('h3');
 const closureList4 = document.createElement('ul');
 const cardImg4 = document.createElement('img');
-const imgBtn4 = document.createElement('button');
-const button4 = document.createElement('img');
 
 
 function templeCards(data) {
@@ -158,35 +146,27 @@ function templeCards(data) {
     cardImg1.setAttribute('src', `${data.temples[0].image}`);
     cardImg1.setAttribute('alt', `${data.temples[0].name}`);
     cardImg1.setAttribute('width', `500`);
-    button1.setAttribute('src', 'images/heart-regular.svg');
-    button1.setAttribute('alt', 'heart icon');
-    imgBtn1.setAttribute('id', 'imgBtn1');
-    imgBtn1.setAttribute('class', 'none');
-    imgBtn1.append(button1);
 
-
-
-    cardSection1.append(cardT1);
-    cardSection1.append(cardImg1);
-    cardSection1.append(addresT1);
-    cardSection1.append(addres1);
-    cardSection1.append(telephoneT1);
-    cardSection1.append(telephone1);
-    cardSection1.append(emailT1);
-    cardSection1.append(email1);
-    cardSection1.append(servicesT1);
-    cardSection1.append(servicesList1);
-    cardSection1.append(history1);
-    cardSection1.append(announced1);
-    cardSection1.append(groundbreaking1);
-    cardSection1.append(dedicated1);
-    cardSection1.append(ordinanceT1);
-    cardSection1.append(ordinance1);
-    cardSection1.append(sessionT1);
-    cardSection1.append(session1);
-    cardSection1.append(closureT1);
-    cardSection1.append(closureList1);
-    // cardSection1.append(imgBtn1);
+    card1.append(cardT1);
+    card1.append(cardImg1);
+    card1.append(addresT1);
+    card1.append(addres1);
+    card1.append(telephoneT1);
+    card1.append(telephone1);
+    card1.append(emailT1);
+    card1.append(email1);
+    card1.append(servicesT1);
+    card1.append(servicesList1);
+    card1.append(history1);
+    card1.append(announced1);
+    card1.append(groundbreaking1);
+    card1.append(dedicated1);
+    card1.append(ordinanceT1);
+    card1.append(ordinance1);
+    card1.append(sessionT1);
+    card1.append(session1);
+    card1.append(closureT1);
+    card1.append(closureList1);
 
     // display card 2
     cardT2.innerHTML = data.temples[1].name;
@@ -218,35 +198,27 @@ function templeCards(data) {
     cardImg2.setAttribute('src', `${data.temples[1].image}`);
     cardImg2.setAttribute('alt', `${data.temples[1].name}`);
     cardImg2.setAttribute('width', `500`);
-    button2.setAttribute('src', 'images/heart-regular.svg');
-    button2.setAttribute('alt', 'heart icon');
-    button2.setAttribute('id', 'like');
-    imgBtn2.setAttribute('id', 'imgBtn2');
-    imgBtn2.append(button2);
 
-
-
-    cardSection2.append(cardT2);
-    cardSection2.append(cardImg2);
-    cardSection2.append(addresT2);
-    cardSection2.append(addres2);
-    cardSection2.append(telephoneT2);
-    cardSection2.append(telephone2);
-    cardSection2.append(emailT2);
-    cardSection2.append(email2);
-    cardSection2.append(servicesT2);
-    cardSection2.append(servicesList2);
-    cardSection2.append(history2);
-    cardSection2.append(announced2);
-    cardSection2.append(groundbreaking2);
-    cardSection2.append(dedicated2);
-    cardSection2.append(ordinanceT2);
-    cardSection2.append(ordinance2);
-    cardSection2.append(sessionT2);
-    cardSection2.append(session2);
-    cardSection2.append(closureT2);
-    cardSection2.append(closureList2);
-    // cardSection2.append(imgBtn2);
+    card2.append(cardT2);
+    card2.append(cardImg2);
+    card2.append(addresT2);
+    card2.append(addres2);
+    card2.append(telephoneT2);
+    card2.append(telephone2);
+    card2.append(emailT2);
+    card2.append(email2);
+    card2.append(servicesT2);
+    card2.append(servicesList2);
+    card2.append(history2);
+    card2.append(announced2);
+    card2.append(groundbreaking2);
+    card2.append(dedicated2);
+    card2.append(ordinanceT2);
+    card2.append(ordinance2);
+    card2.append(sessionT2);
+    card2.append(session2);
+    card2.append(closureT2);
+    card2.append(closureList2);
 
     // display card 3
     cardT3.innerHTML = data.temples[2].name;
@@ -282,35 +254,27 @@ function templeCards(data) {
     cardImg3.setAttribute('src', `${data.temples[2].image}`);
     cardImg3.setAttribute('alt', `${data.temples[2].name}`);
     cardImg3.setAttribute('width', `500`);
-    button3.setAttribute('src', 'images/heart-regular.svg');
-    button3.setAttribute('alt', 'heart icon');
-    button3.setAttribute('id', 'like');
-    imgBtn3.setAttribute('id', 'imgBtn3');
-    imgBtn3.append(button3);
 
-
-
-    cardSection3.append(cardT3);
-    cardSection3.append(cardImg3);
-    cardSection3.append(addresT3);
-    cardSection3.append(addres3);
-    cardSection3.append(telephoneT3);
-    cardSection3.append(telephone3);
-    cardSection3.append(emailT3);
-    cardSection3.append(email3);
-    cardSection3.append(servicesT3);
-    cardSection3.append(servicesList3);
-    cardSection3.append(history3);
-    cardSection3.append(announced3);
-    cardSection3.append(groundbreaking3);
-    cardSection3.append(dedicated3);
-    cardSection3.append(ordinanceT3);
-    cardSection3.append(ordinance3);
-    cardSection3.append(sessionT3);
-    cardSection3.append(session3);
-    cardSection3.append(closureT3);
-    cardSection3.append(closureList3);
-    // cardSection3.append(imgBtn3);
+    card3.append(cardT3);
+    card3.append(cardImg3);
+    card3.append(addresT3);
+    card3.append(addres3);
+    card3.append(telephoneT3);
+    card3.append(telephone3);
+    card3.append(emailT3);
+    card3.append(email3);
+    card3.append(servicesT3);
+    card3.append(servicesList3);
+    card3.append(history3);
+    card3.append(announced3);
+    card3.append(groundbreaking3);
+    card3.append(dedicated3);
+    card3.append(ordinanceT3);
+    card3.append(ordinance3);
+    card3.append(sessionT3);
+    card3.append(session3);
+    card3.append(closureT3);
+    card3.append(closureList3);
 
     // display card 4
     cardT4.innerHTML = data.temples[3].name;
@@ -346,44 +310,27 @@ function templeCards(data) {
     cardImg4.setAttribute('src', `${data.temples[3].image}`);
     cardImg4.setAttribute('alt', `${data.temples[3].name}`);
     cardImg4.setAttribute('width', `500`);
-    button4.setAttribute('src', 'images/heart-regular.svg');
-    button4.setAttribute('alt', 'heart icon');
-    button4.setAttribute('id', 'like');
-    imgBtn4.setAttribute('id', 'imgBtn4');
-    imgBtn4.append(button4);
 
+    card4.append(cardT4);
+    card4.append(cardImg4);
+    card4.append(addresT4);
+    card4.append(addres4);
+    card4.append(telephoneT4);
+    card4.append(telephone4);
+    card4.append(emailT4);
+    card4.append(email4);
+    card4.append(servicesT4);
+    card4.append(servicesList4);
+    card4.append(history4);
+    card4.append(announced4);
+    card4.append(groundbreaking4);
+    card4.append(dedicated4);
+    card4.append(ordinanceT4);
+    card4.append(ordinance4);
+    card4.append(sessionT4);
+    card4.append(session4);
+    card4.append(closureT4);
+    card4.append(closureList4);
 
-
-    cardSection4.append(cardT4);
-    cardSection4.append(cardImg4);
-    cardSection4.append(addresT4);
-    cardSection4.append(addres4);
-    cardSection4.append(telephoneT4);
-    cardSection4.append(telephone4);
-    cardSection4.append(emailT4);
-    cardSection4.append(email4);
-    cardSection4.append(servicesT4);
-    cardSection4.append(servicesList4);
-    cardSection4.append(history4);
-    cardSection4.append(announced4);
-    cardSection4.append(groundbreaking4);
-    cardSection4.append(dedicated4);
-    cardSection4.append(ordinanceT4);
-    cardSection4.append(ordinance4);
-    cardSection4.append(sessionT4);
-    cardSection4.append(session4);
-    cardSection4.append(closureT4);
-    cardSection4.append(closureList4);
-    // cardSection4.append(imgBtn4);
-
-
-
-    card1.append(cardSection1);
-    card2.append(cardSection2);
-    card3.append(cardSection3);
-    card4.append(cardSection4);
 
 }
-
-
-
