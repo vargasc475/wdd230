@@ -1,0 +1,115 @@
+@media (min-width: 45em) {
+    
+
+    /* -------- STYLING HEADER ---------- */
+    header {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .social-header {
+        display: block;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .social-header #instagram, .social-header #facebook {
+        width: 35px;
+        margin: 0 10px;
+    }
+
+    #logo {
+        justify-self: center;
+    }
+
+    #logo img, #logo-footer img {
+        width: 100px;
+    }
+
+    nav.open {
+        grid-column: 1/5;
+    }
+
+    /* ---------STYLING MAIN ------------ */
+
+    .placeholder-principal-img h1 {
+        font-size: 16px;
+    }
+
+    .placeholder-principal-img p {
+        font-size: 16px;
+        margin-right: 70px;
+    }
+
+    #call-to-action-p {
+        font-size: 24px;
+        display: block;
+        background-color: #ff8600;
+        color: #00044a;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 50px;
+        align-self: end;
+        justify-self: center;
+        grid-row: 1;
+        grid-column: 2/3;
+    }
+
+    #call-to-action-p:hover {
+        background-color: #f1f2f6;
+    }
+
+    .placeholder-temple-information {
+        margin-top: 80px;
+    }
+    
+    .placeholder-temple-information p {
+        margin: 30px;
+    }
+
+    .placeholder-weather {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .placeholder-weather .main-weather {
+        grid-column: 1;
+        align-self: center;
+    }
+
+    .placeholder-weather .three-daysW {
+        grid-column: 2;
+    }
+
+    /* -------STYLING FOOTER ---------- */
+
+    .firstF {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .firstF #logo-footer {
+        grid-row: 1/3;
+        align-self: center;
+    }
+
+    .firstF .info {
+        grid-column: 2;
+        margin: 0;
+    }
+
+    .firstF .social {
+        grid-column: 3;
+        grid-row: 1/3;
+        align-self: center;
+    }
+
+    .lastModified {
+        display: none;
+    }
+
+    .lastModified2 {
+        display: block;
+        border-top: 1px solid #f1f2f6;
+        margin: 0 10px;
+    }
+}

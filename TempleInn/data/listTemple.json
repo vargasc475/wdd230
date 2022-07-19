@@ -1,0 +1,122 @@
+{
+    "temples": [
+        {
+            "name": "Rome Italy Temple",
+            "addres": "Via di Settebagni 376, Rome RM, Italy",
+            "telephone": "(39) 06-9480-5050",
+            "services": [
+                "Clothing rental available", 
+                "No cafeteria available", 
+                "Patron Housing available", 
+                "Distribution center nearby"
+            ],
+            "email": "italy@temple.com",
+            "announced": "4 October 2008",
+            "groundbreaking": "23 October 2010",
+            "dedicated": "10 March 2019",
+            "ordinances": "Monday to Saturday from 9:00am to 5:00pm",
+            "sessions": "Monday to Saturday from 9:00am to 5:00pm",
+            "current": [
+                "Monday, 19 September 2022 - Monday, 3 October 2022",
+                "Saturday, 24 December 2022 - Monday, 26 December 2022",
+                "Saturday, 31 December 2022 - Sunday, 1 January 2023"
+            ],
+            
+            "next": [
+                "Monday, 20 March 2023 - 3 April 2023",
+                "Thursday, 29 June 2023",
+                "Monday, 18 September 2023 - Monday, 2 October 2023",
+                "Sunday, 24 December 2023 - Tuesday 2023"
+            ],
+            "image": "https://assets.ldscdn.org/32/6f/326f914e177fdfa6c1b36cd57e9b4a7c23ffb235/rome_italy_temple.png",
+            "summary": "The Rome Italy Temple is the first built in Italy, located on via di Settebagni in municipality III northeast of Rome a short distance from the 'Grande Raccordo Anulare' (Rome Ring Road). temple serve churchgoers in Greece, Cyprus, Albania, Slovenia, Croatia, Bosnia-Herzegovina, and Macedonia, as well as the more than 22,000 Italian LDS members."
+        },
+        {
+            "name": "Caracas Venezuela Temple",
+            "addres": "Avenida. C con Calle C-1, Urb Caurimare Caracas 1062-A, Dependencias Federales Venezuela",
+            "telephone": "(58) 212-985-3051",
+            "services": [
+                "No clothing rental available",
+                "No cafeteria available",
+                "Patron housing available",
+                "Distribution center nearby"
+            ],
+            "email": "venezuela@temple.com",
+            "announced": "30 September 1995",
+            "groundbreaking": "10 January 1999",
+            "dedicated": "20 August 2000",
+            "ordinances": "Monday to Saturday from 9:00am to 5:00pm",
+            "sessions": "Monday to Saturday from 9:00am to 5:00pm",
+            "current": [
+                "Monday, 10 Octuber 2022 - Monday, 19 December 2022"
+            ],
+            "next": [
+                "Monday, 17 April 2023 - Monday, 1 May 2023",
+                "Monday, 11 September 2023 - Monday, 25 September 2023"
+            ],
+            "image": "https://assets.ldscdn.org/2c/00/2c00a215a6d0a9d3f66477a27a3fc44c26b0a9aa/caracas_venezuela_temple.jpeg",
+            "summary": "The Caracas Temple is one of the temples built and operated by the Church of Jesus Christ of Latter-day Saints, the 96th built by the church and the only one in Venezuela, located in the Caurimare urbanization of the city of Caracas, State Miranda. Due to its proximity to the communities, members from Aruba, Suriname, Guyana, Trinidad and Tobago, and the Netherlands Antilles also attend the temple."
+        },
+        {
+            "name": "Bogotá Colombia Temple",
+            "addres": "Carrera 46 N°127-45, Bogotá Distrito Capital, Colombia",
+            "telephone": "(57) 1-625-8000",
+            "services": [
+                "Clothing rental available",
+                "No cafeteria available",
+                "Patron housing available",
+                "Distribution center nearby"
+            ],
+            "email": "bogota@temple.com",
+            "announced": "7 April 1984",
+            "groundbreaking": "26 June 1993",
+            "dedicated": "24 April 1999",
+            "ordinances": "Monday to Saturday from 9:00am to 5:00pm",
+            "sessions": "Monday to Saturday from 9:00am to 5:00pm",
+            "current": [
+                "Wednesday, 20 July 2022",
+                "Monday, 19 September 2022 - Monday, 28 November 2022",
+                "Thursday, 8 December 2022",
+                "Saturday, 24 December 2022",
+                "Saturday, 31 December 2022 - Sunday, 1 January 2023"
+            ],
+            "next": [
+                "Monday, 6 March 2023 - Monday, 13 March 2023",
+                "Monday, 11 September 2023 - Monday, 25 September 2023"
+            ],
+            "image": "https://assets.ldscdn.org/f1/ad/f1ade41481df2f332ba475126fc8d82288cd2a0d/bogota_colombia_temple_lds.jpeg",
+            "summary": "The Temple of Jesus Christ of Latter-day Saints in Bogotá, Colombia, is one of the temples built and operated by the Church of Jesus Christ of Latter-day Saints, the 57th in operation by the church, being the first and unique in operations in Colombia until the dedication of the Barranquilla temple. The temple is located in the city of Bogotá, on Carrera 46 with Av. Rodrigo Lara Bonilla."
+        },
+        {
+            "name": "Barranquila Colombia Temple",
+            "addres": "Carrera 46 via al mar pr 107, Sentido: de Barranquilla a Cartagena, Barranquilla Atlantico, Colombia",
+            "telephone": "(57) 5-310-0200",
+            "services": [
+                "No clothing rental available",
+                "No cafeteria available",
+                "No patron housing available",
+                "Distribution center nearby"
+            ],
+            "email": "barranquilla@temple.com",
+            "announced": "1 October 2011",
+            "groundbreaking": "20 February 2016",
+            "dedicated": "9 December 2018",
+            "ordinances": "Monday to Saturday from 9:00am to 5:00pm",
+            "sessions": "Monday to Saturday from 9:00am to 5:00pm",
+            "current": [
+                "Saturday, 1 October 2022",
+                "Monday, 17 October 2022 - Monday, 31 October 2022",
+                "Thursday, 8 December 2022",
+                "Saturday, 24 Deceember, Sunday, 25 December 2022",
+                "Saturday, 31 December 2022 - Sunday, 1 January 2023"
+            ],
+            "next": [
+                "Monday, 17 April 2023 - Monday, 1 May 2023",
+                "Monday, 16 October 2023 - Monday, 30 October 2023"
+            ],
+            "image": "https://assets.ldscdn.org/1d/f8/1df8872a7b3fadc27f96eacbcf5b21d662943f22/barranquilla_columbia_temple_exterior.jpeg",
+            "summary": "The Barranquilla Colombia Temple is one of the temples built and operated by the Church of Jesus Christ of Latter-day Saints, the church's 161st and the second built in Colombia, located in the Caribbean city of Barranquilla. The temple, due to its proximity to the communities, is attended by faithful from Santa Marta, Cartagena, Valledupar, Montería and the coastal area of Barranquilla. Before the construction of the temple in Barranquilla, the faithful of the region traveled to the temple in Bogotá."
+        }
+
+    ]
+}

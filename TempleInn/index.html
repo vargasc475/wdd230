@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn & Suits</title>
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+    <script src="js/displayTemples.js" defer></script>
+    <script src="js/currentWeather.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" id="logo"><img src="images/templeinn.webp" alt="temple inn & suits logo"></a>
+        <a href="#" id="call-to-action">Make reservation</a>
+        <div class="social-header">
+            <a href="https://instagram.com/"><img src="images/instagramIcon.png" alt="instagram icon" id="instagram"></a>
+            <a href="https://facebook.com/"><img src="images/facebookIcon.png" alt="facebook icon" id="facebook"></a>
+        </div>
+        <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temple.html">Temple</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="placeholder-principal-img">
+            <picture>
+                <source media="(min-width: 700px) and (max-width: 999px)" srcset="images/home-image-medium.jpg">
+                <source media="(min-width: 1000px)" srcset="images/home-image-large.jpg">
+                <img src="images/home-image-small.jpg" alt="Buenos Aires Temple" class="home-image">
+            </picture>
+            <div class="quote"></div>
+            <a href="#" id="call-to-action-p">Reserve Now</a>
+        </div>
+        <div class="placeholder-temple-information">
+            <div class="temple-image"></div>
+        </div>
+        <div class="placeholder-weather">
+            <div class="main-weather"></div>
+            <div class="three-daysW">
+                <h3>Three Days of Forecast</h3>
+                <div class="firstDay"></div>
+                <div class="secondDay"></div>
+                <div class="thirdDay">  </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="firstF">
+            <a href="#" id="logo-footer"><img src="images/templeinn.webp" alt="temple inn & suites logo"></a>
+            <div class="direction">
+                <p id="street-p">4800 Montgomery Ln #300</p>
+                <p id="city-p">Bethesda, MD 20814</p>
+            </div>
+            <div class="info">
+                <p>info@TempleInn.org</p>
+                <p>+(223) 2070-2300</p>
+                <p><a href="https://goo.gl/maps/zsmGuJPmd6tm56No9" target="_blank">&#128205; Location Map</a></p>
+                <p>The weather information is provided by <em><a href="https://openweathermap.org/" target="_blank">openweathermap</a></em></p>
+            </div>
+            <div class="social">
+                <a href="https://instagram.com/"><img src="images/instagramIcon.png" alt="instagram icon" id="instagram"></a>
+                <a href="https://facebook.com/"><img src="images/facebookIcon.png" alt="facebook icon" id="facebook"></a>
+            </div>
+        </div>
+        <div class="lastModified"></div>
+        <div class="lastModified2"></div>
+    </footer>
+</body>
+</html>
