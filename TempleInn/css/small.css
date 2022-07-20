@@ -88,6 +88,10 @@ nav ul a:hover {
     color: #f1f2f6;
 }
 
+nav ul .navigation .sub-nav {
+    overflow: hidden;
+}
+
 #call-to-action {
     width: fit-content;
     height: fit-content;
@@ -342,12 +346,12 @@ main.temples div.temple-cards div ul {
 
 
 
-.reservation form {
+.reservation form, .service-div form {
     margin: 20px 10px;
     box-shadow: 0 0 5px;
 }
 
-.reservation form fieldset{
+.reservation form fieldset {
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -370,7 +374,7 @@ main.temples div.temple-cards div ul {
     border-radius: 50px;
 }
 
-.reservation form fieldset .personalI {
+.reservation form fieldset .personalI, .service-div form fieldset label {
     margin: 7px 50px 7px 50px;
 }
 
@@ -406,6 +410,62 @@ main.temples div.temple-cards div ul {
     background-color: #00044a;
 }
 
+/* ------ STYLING SERVICES MAIN --------- */
+
+.hotel, .breakfast, .missionary {
+    display: none;
+}
+
+.service-div h3 {
+    background-color: #ff8600;
+    color: #f1f2f6;
+    padding: 5px 10px;
+}
+
+.service-div h2 {
+    margin: 30px;
+    border-left: 4px solid #758bfd;
+}
+
+.service-div ul li {
+    margin: 10px auto;
+}
+
+.service-div p {
+    text-align:justify;
+    margin: auto 20px;
+} 
+
+.service-div form {
+    margin-top: 50px;
+}
+
+.service-div form fieldset {
+    padding: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-div form fieldset h3 {
+    background-color: #f1f2f6;
+    color: #00044a;
+}
+
+.service-div form fieldset label textarea {
+    margin-bottom: 10px;
+}
+
+.service-div form fieldset label input {
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+} 
+ 
+.service-div form {
+    background-color: #758bfd ;
+}
 
 /* ---------- STYLING FOOTER ---------- */
 
@@ -428,7 +488,7 @@ footer a:hover {
 
 #logo-footer img {
     width: 100px;
-    border-radius: 10px;
+    border-radius: 40px;
     margin: 10px;
 }
 

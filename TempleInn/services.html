@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn & Suits - Reservation</title>
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="services-header">
+        <a href="index.html" id="logo"><img src="images/templeinn.webp" alt="temple inn & suits logo"></a>
+        <a href="reservation.html" id="call-to-action">Make reservation</a>
+        <div class="social-header">
+            <a href="https://instagram.com/"><img src="images/instagramIcon.png" alt="instagram icon" id="instagram"></a>
+            <a href="https://facebook.com/"><img src="images/facebookIcon.png" alt="facebook icon" id="facebook"></a>
+        </div>
+        <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temple.html">Temples</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="services">
+        <div class="placeholder-principal-img">
+            <picture>
+                <source media="(min-width: 700px) and (max-width: 999px)" srcset="images/home-image-medium.jpg">
+                <source media="(min-width: 1000px)" srcset="images/home-image-large.jpg">
+                <img src="images/home-image-small.jpg" alt="Buenos Aires Temple" class="home-image">
+            </picture>
+            <div>
+                <h1>
+                    Here you can see our services within our hotels.
+                </h1>
+            </div>
+        </div>
+        <div class="service-div">
+            <h2>Reception</h2>
+            <div class="especialized">    
+                <h3>Specialized Services</h3>
+                <picture class="hotel">
+                    <source media="(min-width: 1000px)" srcset="images/large/hotel-large.jpg">
+                    <img src="images/medium/hotel-medium.jpg" alt="hotel room">
+                </picture>
+                <ul>
+                    <li>Free access to changing rooms and bathroom facilities for temple patrons who have traveled far and need to change and from church clothes</li>
+                    <li>A playroom and low-cost, short-term babysitting services for the children of patrons</li>
+                    <li>Temple history themed reception and sitting area</li>
+                    <li>A wedding reception hall that can be easily customized with a simple catering menu and kitchen access for food preparation and serving</li>
+                    <li>A family search center that supports family search and ordinance work</li>
+                </ul>
+
+            </div>    
+
+            <div class="amenities">
+                <h3>Free Amenities</h3>
+                <picture class="breakfast">
+                    <source media="(min-width: 1000px)" srcset="images/large/breakfast-large.jpg">
+                    <img src="images/medium/breakfast-medium.jpg" alt="breakfast">
+                </picture>
+                <ul>
+                    <li>Breakfast</li>
+                    <li>Exercise/workout room</li>
+                    <li>Indoor pool</li>
+                    <li>WiFi high-speed internet access and smart TVs</li>
+                    <li>Parking</li>
+                    <li>Temple Shuttle</li>
+                    <li>Family history consultation and family ordinance card service</li>
+                </ul>
+            </div>
+            <div class="full-time">
+                <h2 class="missionary-h2">Full-time Temple Missionary</h2>
+                <p>In our hotels we offered long-term stay accomodations in kitchentte suites for full-time temple missionaries. You can put on contact with us and make this specials reservations.</p>
+                <picture class="missionary">
+                    <source media="(min-width: 1000px)" srcset="images/large/templemissionary-large.jpg">
+                    <img src="images/medium/templemissionary-medium.jpg" alt="missionaries in the temple">
+                </picture>
+
+                <form action="#">
+                    <fieldset>
+                        <h3>Reserve for temple missionary</h3>
+                        <label><input type="text" name="fname" placeholder="First Name*" required></label>
+                        <label><input type="text" name="lname" placeholder="Last Name*" required></label>
+                        <label><input type="email" name="email" placeholder="Email*" required></label>
+                        <label class="reservation-details"><strong>Reservation details</strong><textarea name="comments" rows="8" cols="25"></textarea></label>
+                        <input type="hidden" name="date" value="CurrentTime"> 
+                        <input type="hidden" name="time" value="CurrentDate">
+                    </fieldset>
+                    <input type="submit" value="Request Reservation" class="submitBtn">
+                </div>    
+            </form>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="firstF">
+            <a href="#" id="logo-footer"><img src="images/templeinn.webp" alt="temple inn & suites logo"></a>
+            <div class="direction">
+                <p id="street-p">4800 Montgomery Ln #300</p>
+                <p id="city-p">Bethesda, MD 20814</p>
+            </div>
+            <div class="info">
+                <p>info@TempleInn.org</p>
+                <p>+(223) 2070-2300</p>
+                <p><a href="https://goo.gl/maps/zsmGuJPmd6tm56No9" target="_blank">&#128205; Location Map</a></p>
+                <p>The weather information is provided by <em><a href="https://openweathermap.org/" target="_blank">openweathermap</a></em></p>
+                <a href="resource.html" target="_blank">Resource Page</a>
+            </div>
+            <div class="social">
+                <a href="https://instagram.com/"><img src="images/instagramIcon.png" alt="instagram icon"></a>
+                <a href="https://facebook.com/"><img src="images/facebookIcon.png" alt="facebook icon"></a>
+            </div>
+        </div>
+        <div class="lastModified"></div>
+        <div class="lastModified2"></div>
+    </footer>
+    
+</body>
+
+</html>

@@ -34,7 +34,7 @@ function displayTemples(data) {
     sourceLarge.setAttribute('media', '(min-width: 1000px)');
     sourceLarge.setAttribute('srcset', 'images/large/caracas-temple-large.jpg');
     sourceMedium.setAttribute('media', '(min-width: 700px) and (max-width: 900px)');
-    sourceMedium.setAttribute('srcset', 'images/large/caracas-temple-medium.jpg');
+    sourceMedium.setAttribute('srcset', 'images/medium/caracas-temple-medium.jpg');
     templeImgHome.setAttribute('id', 'templeImage')
     templeImgHome.setAttribute('src', `${temple.image}`);
     templeImgHome.setAttribute('alt', `${temple.name}`);

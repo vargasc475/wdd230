@@ -59,6 +59,10 @@
         background-color: #ff8600;
     }
 
+    .services-header nav ul li:nth-child(4) {
+        background-color: #ff8600;
+    }
+
     #call-to-action {
         justify-self: center;
         grid-column: 2/4;
@@ -193,6 +197,41 @@
     .reservation .placeholder-principal-img div {
         margin-top: 200px;
     }
+
+    /* --------- STYLING SERVICES MAIN ---------- */
+
+    .service-div h2 {
+        margin-left: 50px;
+    }
+
+    .service-div h3 {
+        padding-left: 70px;
+    }
+
+    .service-div ul {
+        margin-left: 50px;
+    }
+
+    .service-div form {
+        width: 350px;
+        justify-self: start;
+        margin-left: 100px;
+    }
+
+    .service-div .missionary {
+        justify-self: end;
+    }
+
+    .service-div form h3 {
+        padding: 10px;
+    }
+
+    .service-div form label {
+        margin-left: 70px;
+    }
+
+
+
 
     /* ------ STYLING FOOTER ------- */
 
