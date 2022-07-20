@@ -17,9 +17,7 @@ async function getData() {
     let response = await fetch(url);
     if (response.ok) {
         let data = await response.json();
-        console.log(data);
         displayTemples(data);
-        // templeCards(data);
     } else {
         throw Error(response.statusText)
     }
