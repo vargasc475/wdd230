@@ -39,6 +39,9 @@ const sessionT1 = document.createElement('h3');
 const session1 = document.createElement('p');
 const closureT1 = document.createElement('h3');
 const closureList1 = document.createElement('ul');
+const pictureImg1 = document.createElement('picture');
+const sourceLarge1 = document.createElement('source');
+const sourceMedium1 = document.createElement('source');
 const cardImg1 = document.createElement('img');
 
 // CREATE ELEMENTS FOR SECTION CARD 2
@@ -61,6 +64,9 @@ const sessionT2 = document.createElement('h3');
 const session2 = document.createElement('p');
 const closureT2 = document.createElement('h3');
 const closureList2 = document.createElement('ul');
+const pictureImg2 = document.createElement('picture');
+const sourceLarge2 = document.createElement('source');
+const sourceMedium2 = document.createElement('source');
 const cardImg2 = document.createElement('img');
 
 // CREATE ELEMENTS FOR SECTION CARD 3
@@ -83,6 +89,9 @@ const sessionT3 = document.createElement('h3');
 const session3 = document.createElement('p');
 const closureT3 = document.createElement('h3');
 const closureList3 = document.createElement('ul');
+const pictureImg3 = document.createElement('picture');
+const sourceLarge3 = document.createElement('source');
+const sourceMedium3 = document.createElement('source');
 const cardImg3 = document.createElement('img');
 
 // CREATE ELEMENTS FOR SECTION CARD 4
@@ -105,6 +114,9 @@ const sessionT4 = document.createElement('h3');
 const session4 = document.createElement('p');
 const closureT4 = document.createElement('h3');
 const closureList4 = document.createElement('ul');
+const pictureImg4 = document.createElement('picture');
+const sourceLarge4 = document.createElement('source');
+const sourceMedium4 = document.createElement('source');
 const cardImg4 = document.createElement('img');
 
 
@@ -159,11 +171,18 @@ function templeCards(data) {
                             <li>${data.temples[0].next[1]}</li>
                             <li>${data.temples[0].next[2]}</li>
                             <li>${data.temples[0].next[3]}</li>`;
+    sourceMedium1.setAttribute('media', '(min-width: 700px) and (max-width: 900px)');
+    sourceMedium1.setAttribute('srcset', 'images/medium/rome-temple-medium.jpg');
+    sourceLarge1.setAttribute('media', '(min-width: 1000px)');
+    sourceLarge1.setAttribute('srcset', 'images/large/rome-temple-large.jpg');
     cardImg1.setAttribute('src', `${data.temples[0].image}`);
     cardImg1.setAttribute('alt', `${data.temples[0].name}`);
+    pictureImg1.append(sourceLarge1);
+    pictureImg1.append(sourceMedium1);
+    pictureImg1.append(cardImg1);
 
     card1.append(cardT1);
-    card1.append(cardImg1);
+    card1.append(pictureImg1);
     card1.append(addresT1);
     card1.append(addres1);
     card1.append(telephoneT1);
@@ -228,11 +247,18 @@ function templeCards(data) {
                             <h4>2023</h4>
                             <li>${data.temples[1].next[0]}</li>
                             <li>${data.temples[1].next[1]}</li>`;
+    sourceMedium2.setAttribute('media', '(min-width: 700px) and (max-width: 900px)');
+    sourceMedium2.setAttribute('srcset', 'images/medium/caracas-temple-medium.jpg');
+    sourceLarge2.setAttribute('media', '(min-width: 1000px)');
+    sourceLarge2.setAttribute('srcset', 'images/large/caracas-temple-large.jpg');
     cardImg2.setAttribute('src', `${data.temples[1].image}`);
     cardImg2.setAttribute('alt', `${data.temples[1].name}`);
+    pictureImg2.append(sourceLarge2);
+    pictureImg2.append(sourceMedium2);
+    pictureImg2.append(cardImg2);
 
     card2.append(cardT2);
-    card2.append(cardImg2);
+    card2.append(pictureImg2);
     card2.append(addresT2);
     card2.append(addres2);
     card2.append(telephoneT2);
@@ -301,11 +327,18 @@ function templeCards(data) {
                             <h4>2023</h4>
                             <li>${data.temples[2].next[0]}</li>
                             <li>${data.temples[2].next[1]}</li>`;
+    sourceMedium3.setAttribute('media', '(min-width: 700px) and (max-width: 900px)');
+    sourceMedium3.setAttribute('srcset', 'images/medium/bogota-temple-medium.jpg');
+    sourceLarge3.setAttribute('media', '(min-width: 1000px)');
+    sourceLarge3.setAttribute('srcset', 'images/large/bogota-temple-large.jpg');
     cardImg3.setAttribute('src', `${data.temples[2].image}`);
     cardImg3.setAttribute('alt', `${data.temples[2].name}`);
+    pictureImg3.append(sourceLarge3);
+    pictureImg3.append(sourceMedium3);
+    pictureImg3.append(cardImg3);
 
     card3.append(cardT3);
-    card3.append(cardImg3);
+    card3.append(pictureImg3);
     card3.append(addresT3);
     card3.append(addres3);
     card3.append(telephoneT3);
@@ -374,11 +407,18 @@ function templeCards(data) {
                             <h4>2023</h4>
                             <li>${data.temples[3].next[0]}</li>
                             <li>${data.temples[3].next[1]}</li>`;
+    sourceMedium4.setAttribute('media', '(min-width: 700px) and (max-width: 900px)');
+    sourceMedium4.setAttribute('srcset', 'images/medium/barranquilla-temple-medium.jpg');
+    sourceLarge4.setAttribute('media', '(min-width: 1000px)');
+    sourceLarge4.setAttribute('srcset', 'images/large/barranquilla-temple-large.jpg');
     cardImg4.setAttribute('src', `${data.temples[3].image}`);
     cardImg4.setAttribute('alt', `${data.temples[3].name}`);
+    pictureImg4.append(sourceLarge4);
+    pictureImg4.append(sourceMedium4);
+    pictureImg4.append(cardImg4);
 
     card4.append(cardT4);
-    card4.append(cardImg4);
+    card4.append(pictureImg4);
     card4.append(addresT4);
     card4.append(addres4);
     card4.append(telephoneT4);

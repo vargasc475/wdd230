@@ -1,6 +1,9 @@
+html {
+    height: 100%;
+}
 body {
     margin: auto;
-    height: 100%;
+    min-height: 100%;
 }
 
 h1, h2, h3, h4 {
@@ -129,9 +132,10 @@ nav ul a:hover {
 
 }
 
-.temples .placeholder-principal-img div h1 {
+.placeholder-principal-img div {
     background-color: #f1f2f69d;
     padding: 10px 0;
+    margin: 10px 0;
 }
 
 
@@ -270,7 +274,9 @@ nav ul a:hover {
 
 main.temples div.temple-cards div {
     background-color: #a3b8fe;
-    position: relative;
+    display: grid;
+    margin: 30px 0;
+    box-shadow: 0 0 20px #00044a;
 } 
 
 main.temples div.temple-cards div h2 {
@@ -298,7 +304,6 @@ main.temples div.temple-cards div p {
 }
 
 main.temples div.temple-cards div #like {
-    /* margin-left: 100px; */
     width: 50px;
     background-color: transparent;
     padding: 10px;
@@ -310,21 +315,19 @@ main.temples div.temple-cards div button {
     background-color: #f1f2f6;
     border-radius: 30px;
     border: none;
-    margin: 10px;
+    margin: 10px 40px;
     cursor: pointer;
     font-size: 20px;
-    position: absolute;
-    top: 13%;
-    left: 70%;
+    grid-row: 3;
 }
 
-main.temples div.temple-cards div#card2 button {
+/* main.temples div.temple-cards div#card2 button {
     top: 270px;
 }
 
 main.temples div.temple-cards div#card4 button {
     top: 240px;
-}
+} */
 
 
 main.temples div.temple-cards div .like-color {
