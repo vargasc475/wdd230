@@ -51,11 +51,11 @@
         background-color: #f1f2f6;
     }
 
-    .temple-header nav ul li:nth-child(1):hover {
+    .home-header nav ul li:nth-child(1) {
         background-color: #ff8600;
     }
 
-    header nav ul li:nth-child(1) {
+    .reservation-header nav ul li:nth-child(3) {
         background-color: #ff8600;
     }
 
@@ -182,6 +182,16 @@
 
     #dedicated-d {
         margin-top: 120px;
+    }
+
+    /* -------- STYLING RESERVATION MAIN --------- */
+
+    .reservation form {
+        margin: 450px 350px 50px 350px;
+    }
+
+    .reservation .placeholder-principal-img div {
+        margin-top: 200px;
     }
 
     /* ------ STYLING FOOTER ------- */

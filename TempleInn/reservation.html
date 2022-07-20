@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Inn & Suits - Temples</title>
+    <title>Temple Inn & Suits - Reservation</title>
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
@@ -14,7 +14,7 @@
     <script defer src="js/localStorage.js"></script>
 </head>
 <body>
-    <header class="temple-header">
+    <header class="reservation-header">
         <a href="index.html" id="logo"><img src="images/templeinn.webp" alt="temple inn & suits logo"></a>
         <a href="reservation.html" id="call-to-action">Make reservation</a>
         <div class="social-header">
@@ -31,7 +31,7 @@
             </ul>
         </nav>
     </header>
-    <main class="temples">
+    <main class="reservation">
         <div class="placeholder-principal-img">
             <picture>
                 <source media="(min-width: 700px) and (max-width: 999px)" srcset="images/home-image-medium.jpg">
@@ -40,29 +40,50 @@
             </picture>
             <div>
                 <h1>
-                    In this section you will see some temples around the world with some information about its history, ordinances, services, etc.
+                    Make a reservation and enjoy our great services!
                 </h1>
             </div>
         </div>
-        <div class="temple-cards">
-
-            <div id="card4">
-                <button id="imgBtn4" class="dont-like">Like!</button>
-            </div>
-
-            <div id="card3">
-                <button id="imgBtn3" class="dont-like">Like!</button>
-            </div>
-
-            <div id="card2">
-                <button id="imgBtn2" class="dont-like">Like!</button>
-            </div>
-
-            <div id="card1">
-                <button id="imgBtn1" class="dont-like">Like!</button>
-            </div>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <picture>
+                    <img src="images/templeinn.webp" alt="temple inn & suits logo">
+                </picture>
+                <h2>Personal Information</h2>
+                <label class="personalI"><input type="text" name="fname" placeholder="First Name*" required></label>
+                <label class="personalI"><input type="text" name="lname" placeholder="Last Name*" required></label>
+                <label class="personalI"><input type="tel" name="phone" placeholder="Phone Number*" required></label>
+                <label class="personalI"><input type="email" name="email" placeholder="Email*" required></label> 
+                <label class="personalI"><input type="text" name="country" placeholder="Country*" autocapitalize="on" required></label>
+                <div class="reserve-div">
+                    <h2>Make A Reservation</h2>
+                    <label class="make-reservation"><strong>Select the location</strong>
+                        <select name="subject">
+                            <option value="select">Please Select</option>
+                            <option value="barranquilla">Barranquilla, Colombia</option>
+                            <option value="bogota">Bogota, Colombia</option>
+                            <option value="caracas">Caracas, Venezuela</option>
+                            <option value="rome">Rome, Italy</option>
+                        </select>
+                    </label>
+                    <label for="date" class="make-reservation"><strong>Date</strong> <input type="date" id="date" name="date" min="2022-7-01"></label>
+                    <label for="Nroom" class="make-reservation"><strong>Number of Rooms</strong> <input type="number" name="quantity" min="1" max="20" value="1"></label>
+                    <label class="make-reservation"><strong>Type of Room</strong> 
+                        <select name="subject">
+                            <option value="select">Please Select</option>
+                            <option value="single">Single Room</option>
+                            <option value="family">Family Room</option>
+                            <option value="couple">Couple Room</option>
+                        </select>
+                    </label>
+                    <label class="make-reservation"><strong>Special Accomodations</strong> <textarea name="comments" rows="8" cols="25"></textarea></label>
+                    <input type="hidden" name="date" value="CurrentTime"> 
+                    <input type="hidden" name="time" value="CurrentDate">
+                </div>
+            </fieldset>
+                <input type="submit" value="Reserve Now" class="submitBtn">
+            </form>
         </div>
-        
     </main>
     <footer>
         <div class="firstF">

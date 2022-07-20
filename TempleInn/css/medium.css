@@ -214,6 +214,42 @@
         margin-top: 50px;
     }
 
+    /* ------- STYLING RESERVATION MAIN --------- */
+
+    
+    .reservation {
+        display: grid;
+        grid-column: 1fr 1fr;
+    }
+
+    .reservation .placeholder-principal-img {
+        grid-row: 1;
+        grid-column: 1/3;
+    }
+
+    .reservation .placeholder-principal-img div {
+        align-self: start;
+        margin-top: 150px;
+    }
+    
+    .reservation form {
+        margin: 300px 100px 50px 100px;
+        grid-row: 1;
+        grid-column: 1/3;
+    }
+
+    .reservation form picture img {
+        width: 20%;
+    }
+
+    .reservation form fieldset .personalI {
+        margin: 7px 100px 7px 90px;
+    }
+
+    .make-reservation {
+        margin: 7px 100px 7px 90px;
+    }
+
 
     /* -------STYLING FOOTER ---------- */
 

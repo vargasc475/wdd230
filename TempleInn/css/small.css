@@ -8,9 +8,10 @@ body {
 
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
+    color: #00044a;
 }
 
-p, a, li {
+p, a, li, label, input {
     font-family: 'Nani', sans-serif;
 }
 
@@ -143,7 +144,7 @@ nav ul a:hover {
     font-size: 14px;
     margin: 0 10px;
     text-align: center;
-    color: #00044a;
+    /* color: #00044a; */
 }
 
 .placeholder-principal-img p {
@@ -154,7 +155,7 @@ nav ul a:hover {
 
 
 .placeholder-temple-information h2 {
-    color: #00044a;
+    /* color: #00044a; */
     text-align: center;
 }
 .placeholder-temple-information #templeImage {
@@ -280,7 +281,7 @@ main.temples div.temple-cards div {
 } 
 
 main.temples div.temple-cards div h2 {
-    color:#00044a;
+    /* color:#00044a; */
     text-align: center;
     padding: 10px;
     border-bottom: 1px solid #00044a;
@@ -321,14 +322,6 @@ main.temples div.temple-cards div button {
     grid-row: 3;
 }
 
-/* main.temples div.temple-cards div#card2 button {
-    top: 270px;
-}
-
-main.temples div.temple-cards div#card4 button {
-    top: 240px;
-} */
-
 
 main.temples div.temple-cards div .like-color {
     background-color: #ff8600;
@@ -342,6 +335,75 @@ main.temples div.temple-cards div ul li {
 
 main.temples div.temple-cards div ul {
     padding-bottom: 10px;
+}
+
+/* ---------- STYLING RESERVATION MAIN ---------- */
+
+
+
+
+.reservation form {
+    margin: 20px 10px;
+    box-shadow: 0 0 5px;
+}
+
+.reservation form fieldset{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border: none;
+    margin: 0;
+    background-color: #f1f2f6;
+} 
+
+.reservation {
+    text-align: center;
+}
+
+.reservation  form picture {
+    background-color: #ff8600;
+    padding: 5px;
+}
+.reservation form picture img {
+    width: 40%;
+    margin: auto;
+    border-radius: 50px;
+}
+
+.reservation form fieldset .personalI {
+    margin: 7px 50px 7px 50px;
+}
+
+.reservation form fieldset .personalI input, .make-reservation input {
+    padding: 10px;
+    border: 1px solid #00044a;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.make-reservation {
+    margin: 7px 50px 7px 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.reserve-div {
+    background-color: #a3b8fe;
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    background-color: #ff8600;
+    color: #f1f2f6;
+    border: none;
+    cursor: pointer;
+}
+
+.submitBtn:hover {
+    background-color: #00044a;
 }
 
 
